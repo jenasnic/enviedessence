@@ -1,0 +1,17 @@
+name: Enviedessence
+description: Theme specifique Enviedessence
+type: theme
+core: 8.x
+
+libraries:
+  - enviedessence/global-styling
+
+regions:
+  header: Header
+  page-top: Page top
+  content: Page Content
+  homepage: Homepage
+  page-bottom: Page bottom
+  footer: Footer
+  hide: Hidden Content
+

@@ -1,0 +1,24 @@
+<div class="page-content">
+    <header>
+        {{ page.header }}
+    </header>
+    <div class="content-wrapper">
+        {% if page.page-top %}
+        <section class="main-top">
+            {{ page.page-top }}
+        </section>
+        {% endif %}
+        <section class="main-content">
+            {{ page.homepage }}
+        </section>
+        {% if page.page-bottom %}
+        <section class="main-bottom">
+            {{ page.page-bottom }}
+        </section>
+        {% endif %}
+    </div>
+    <footer>
+        {{ page.footer }}
+    </footer>
+</div>
+

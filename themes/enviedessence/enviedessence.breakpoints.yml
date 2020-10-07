@@ -1,0 +1,18 @@
+enviedessence.mobile:
+  label: mobile
+  mediaQuery: 'all and (max-width: 767px)'
+  weight: 0
+  multipliers:
+    - 1x
+enviedessence.tablet:
+  label: tablet
+  mediaQuery: 'all and (min-width: 768px) and (max-width: 1199px)'
+  weight: 1
+  multipliers:
+    - 1x
+enviedessence.xwide:
+  label: desktop
+  mediaQuery: 'all and (min-width: 1200px)'
+  weight: 2
+  multipliers:
+    - 1x
