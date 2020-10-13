@@ -10,7 +10,7 @@ enviedessence.tablet:
   weight: 1
   multipliers:
     - 1x
-enviedessence.xwide:
+enviedessence.desktop:
   label: desktop
   mediaQuery: 'all and (min-width: 1200px)'
   weight: 2

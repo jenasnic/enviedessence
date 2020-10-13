@@ -1,0 +1,20 @@
+uuid: e474f179-033c-4c64-901a-685e4d55b176
+langcode: fr
+status: true
+dependencies:
+  module:
+    - block_content
+    - node
+id: block_content.field_skills
+field_name: field_skills
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: 4020cc0c-fb95-411f-8841-117edb35d5ad
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_comment
+    - paragraphs.paragraphs_type.session
+id: paragraph.session.field_comment
+field_name: field_comment
+entity_type: paragraph
+bundle: session
+label: commentaire
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

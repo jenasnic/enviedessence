@@ -1,0 +1,19 @@
+uuid: 5a89e122-0330-4182-879e-3ced1a57cbd4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price_info
+    - node.type.skill
+id: node.skill.field_price_info
+field_name: field_price_info
+entity_type: node
+bundle: skill
+label: 'info tarif'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

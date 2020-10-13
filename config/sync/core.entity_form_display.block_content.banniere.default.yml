@@ -1,0 +1,50 @@
+uuid: 6a63a36b-048e-4b14-bc39-69a8ba6d0cd3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.banniere
+    - field.field.block_content.banniere.field_image
+    - field.field.block_content.banniere.field_subtitle
+    - field.field.block_content.banniere.field_title
+id: block_content.banniere.default
+targetEntityType: block_content
+bundle: banniere
+mode: default
+content:
+  field_image:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_subtitle:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

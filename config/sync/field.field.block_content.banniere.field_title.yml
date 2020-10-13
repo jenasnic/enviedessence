@@ -1,0 +1,19 @@
+uuid: 837942cf-90ff-4c9a-9d02-df01042f3663
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.banniere
+    - field.storage.block_content.field_title
+id: block_content.banniere.field_title
+field_name: field_title
+entity_type: block_content
+bundle: banniere
+label: titre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

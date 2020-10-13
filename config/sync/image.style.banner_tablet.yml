@@ -1,0 +1,15 @@
+uuid: a506d29e-669c-4fb0-b518-e9b3dcd0a653
+langcode: fr
+status: true
+dependencies: {  }
+name: banner_tablet
+label: 'Banner - tablet'
+effects:
+  ba66832d-c5fe-43c4-b7b4-0ddb32641603:
+    uuid: ba66832d-c5fe-43c4-b7b4-0ddb32641603
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 450
+      anchor: center-center

@@ -1,0 +1,8 @@
+uuid: 53f69425-a537-41c8-aa9b-23bb34df8b85
+langcode: fr
+status: true
+dependencies: {  }
+id: banniere
+label: Bannière
+revision: 0
+description: ''

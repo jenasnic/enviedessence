@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.media.image.field_media_image
-    - image.style.thumbnail
     - media.type.image
   module:
     - image
@@ -25,7 +24,7 @@ content:
   field_media_image:
     settings:
       progress_indicator: throbber
-      preview_image_style: thumbnail
+      preview_image_style: ''
     third_party_settings: {  }
     type: image_image
     weight: 0

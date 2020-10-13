@@ -1,0 +1,50 @@
+uuid: 20c9dd5e-5964-4553-b604-ffd2994721b2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.contenu
+    - field.field.block_content.contenu.field_image
+    - field.field.block_content.contenu.field_text
+    - field.field.block_content.contenu.field_title
+  module:
+    - media_library
+    - text
+id: block_content.contenu.default
+targetEntityType: block_content
+bundle: contenu
+mode: default
+content:
+  field_image:
+    type: media_library_widget
+    weight: 2
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_text:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,37 @@
+uuid: 2976a74b-5821-4a91-a335-7cc972dc4fa3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.skills
+    - field.field.block_content.skills.field_skills
+    - field.field.block_content.skills.field_title
+id: block_content.skills.default
+targetEntityType: block_content
+bundle: skills
+mode: default
+content:
+  field_skills:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

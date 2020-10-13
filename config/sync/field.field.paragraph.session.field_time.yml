@@ -1,0 +1,19 @@
+uuid: a8925b6d-9a4b-4b3b-8983-452dcf3f167e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_time
+    - paragraphs.paragraphs_type.session
+id: paragraph.session.field_time
+field_name: field_time
+entity_type: paragraph
+bundle: session
+label: horaire
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

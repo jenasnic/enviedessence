@@ -1,0 +1,11 @@
+uuid: 072d7870-f184-4d62-91a8-616502007e4f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.banniere
+id: block_content.banniere
+target_entity_type_id: block_content
+target_bundle: banniere
+default_langcode: site_default
+language_alterable: false

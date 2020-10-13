@@ -1,0 +1,31 @@
+uuid: 67971436-e7df-4c37-8a94-1f834262ca20
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sessions
+    - node.type.skill
+    - paragraphs.paragraphs_type.session
+  module:
+    - entity_reference_revisions
+id: node.skill.field_sessions
+field_name: field_sessions
+entity_type: node
+bundle: skill
+label: séances
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      session: session
+    target_bundles_drag_drop:
+      session:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

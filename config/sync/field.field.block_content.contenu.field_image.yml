@@ -1,0 +1,28 @@
+uuid: 55a9da54-d345-4038-9610-dad911f08a68
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.contenu
+    - field.storage.block_content.field_image
+    - media.type.image
+id: block_content.contenu.field_image
+field_name: field_image
+entity_type: block_content
+bundle: contenu
+label: image
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,10 @@
+uuid: 19ddfe63-b2d3-46c6-b66f-e8195ea06698
+langcode: fr
+status: true
+dependencies: {  }
+id: session
+label: Séance
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

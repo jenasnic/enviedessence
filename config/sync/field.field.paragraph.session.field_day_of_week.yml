@@ -1,0 +1,21 @@
+uuid: 3ec81534-e00a-4f17-a6eb-063df0fde606
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_day_of_week
+    - paragraphs.paragraphs_type.session
+  module:
+    - options
+id: paragraph.session.field_day_of_week
+field_name: field_day_of_week
+entity_type: paragraph
+bundle: session
+label: 'jour de la semaine'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
