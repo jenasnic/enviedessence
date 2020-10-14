@@ -1,0 +1,10 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      build/style.css: {}
+  js:
+    build/index.js: {}
+  dependencies:
+  - core/drupal
+  - core/jquery

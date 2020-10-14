@@ -1,0 +1,22 @@
+uuid: ec9a8cae-7793-4bf0-9967-c7222cbd2f71
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - enviedessence
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: enviedessence_content
+theme: enviedessence
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenu de la page principale'
+  provider: system
+  label_display: '0'
+visibility: {  }
