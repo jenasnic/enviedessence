@@ -1,0 +1,19 @@
+uuid: bf964375-b499-480c-b4e1-73088cc8cc1f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.skills
+    - field.storage.block_content.field_title
+id: block_content.skills.field_title
+field_name: field_title
+entity_type: block_content
+bundle: skills
+label: titre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

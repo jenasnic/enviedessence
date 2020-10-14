@@ -1,0 +1,15 @@
+uuid: aeee8a00-8f8a-4131-a01f-62a318865b1f
+langcode: fr
+status: true
+dependencies: {  }
+name: banner_desktop
+label: 'Banner - desktop'
+effects:
+  7d8a15c8-b1e5-4938-8a58-edd7e0899e09:
+    uuid: 7d8a15c8-b1e5-4938-8a58-edd7e0899e09
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 720
+      anchor: center-center

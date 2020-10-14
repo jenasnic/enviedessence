@@ -1,0 +1,21 @@
+uuid: c6ee3fe9-304d-4168-9595-890e191d9844
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_place
+    - paragraphs.paragraphs_type.session
+  module:
+    - options
+id: paragraph.session.field_place
+field_name: field_place
+entity_type: paragraph
+bundle: session
+label: lieu
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

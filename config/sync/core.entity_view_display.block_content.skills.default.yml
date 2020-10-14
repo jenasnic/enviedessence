@@ -1,0 +1,32 @@
+uuid: f810721a-00bb-4740-9a39-f9e088d3f632
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.skills
+    - field.field.block_content.skills.field_skills
+    - field.field.block_content.skills.field_title
+id: block_content.skills.default
+targetEntityType: block_content
+bundle: skills
+mode: default
+content:
+  field_skills:
+    weight: 1
+    label: visually_hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_title:
+    weight: 0
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

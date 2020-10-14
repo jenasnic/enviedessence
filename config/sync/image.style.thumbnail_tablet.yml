@@ -1,0 +1,15 @@
+uuid: 3d594204-c948-41db-bba0-c796aa0c9f13
+langcode: fr
+status: true
+dependencies: {  }
+name: thumbnail_tablet
+label: 'Thumbnail - tablet'
+effects:
+  0deaad67-ea0a-450d-ba49-fa9233e1f1c2:
+    uuid: 0deaad67-ea0a-450d-ba49-fa9233e1f1c2
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 375
+      height: 500
+      anchor: center-center

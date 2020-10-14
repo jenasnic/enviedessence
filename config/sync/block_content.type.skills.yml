@@ -1,0 +1,8 @@
+uuid: 19dcec23-a10d-4c4f-9ee8-0af56d6c519c
+langcode: fr
+status: true
+dependencies: {  }
+id: skills
+label: Compétences
+revision: 0
+description: ''

@@ -1,0 +1,15 @@
+uuid: 303d4099-3b57-475b-9f39-a37ca49fcce5
+langcode: fr
+status: true
+dependencies: {  }
+name: thumbnail_desktop
+label: 'Thumbnail - desktop'
+effects:
+  1931a1b4-f905-45a8-9e9c-49bbf775e1d5:
+    uuid: 1931a1b4-f905-45a8-9e9c-49bbf775e1d5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 800
+      anchor: center-center

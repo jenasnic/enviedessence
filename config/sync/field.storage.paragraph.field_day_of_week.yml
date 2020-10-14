@@ -1,0 +1,42 @@
+uuid: 5ccc30ca-10a8-410e-b35a-d4f8e9f50744
+langcode: fr
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_day_of_week
+field_name: field_day_of_week
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: monday
+      label: Lundi
+    -
+      value: tuesday
+      label: Mardi
+    -
+      value: wednesday
+      label: Mercredi
+    -
+      value: thursday
+      label: Jeudi
+    -
+      value: friday
+      label: Vendredi
+    -
+      value: saturday
+      label: Samedi
+    -
+      value: sunday
+      label: Dimanche
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

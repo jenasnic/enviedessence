@@ -1,0 +1,11 @@
+uuid: 60b15c76-ab28-46f4-8a09-1ed57d5c53f4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.skill
+id: node.skill
+target_entity_type_id: node
+target_bundle: skill
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,30 @@
+uuid: 216b0109-baf7-4f3c-8722-79561472e72b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - image.style.banner_desktop
+    - image.style.banner_mobile
+    - image.style.banner_tablet
+  theme:
+    - enviedessence
+id: banner
+label: Banner
+image_style_mappings:
+  -
+    breakpoint_id: enviedessence.desktop
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: banner_desktop
+  -
+    breakpoint_id: enviedessence.tablet
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: banner_tablet
+  -
+    breakpoint_id: enviedessence.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: banner_mobile
+breakpoint_group: enviedessence
+fallback_image_style: banner_mobile

@@ -1,0 +1,46 @@
+uuid: 6f727aed-0471-467d-95e3-44b7f220effc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.session.field_comment
+    - field.field.paragraph.session.field_day_of_week
+    - field.field.paragraph.session.field_place
+    - field.field.paragraph.session.field_time
+    - paragraphs.paragraphs_type.session
+id: paragraph.session.default
+targetEntityType: paragraph
+bundle: session
+mode: default
+content:
+  field_comment:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_day_of_week:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_place:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_time:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

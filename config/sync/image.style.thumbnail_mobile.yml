@@ -1,0 +1,15 @@
+uuid: b2be5bd0-092d-43a7-856e-28dc3539e466
+langcode: fr
+status: true
+dependencies: {  }
+name: thumbnail_mobile
+label: 'Thumbnail - mobile'
+effects:
+  f400947c-2f0a-47d8-a97e-e3e25c893057:
+    uuid: f400947c-2f0a-47d8-a97e-e3e25c893057
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 240
+      height: 320
+      anchor: center-center

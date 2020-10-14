@@ -1,0 +1,30 @@
+uuid: 4d71d8b9-bd5a-4c35-93b0-1c46dcbeb630
+langcode: fr
+status: true
+dependencies:
+  config:
+    - image.style.thumbnail_desktop
+    - image.style.thumbnail_mobile
+    - image.style.thumbnail_tablet
+  theme:
+    - enviedessence
+id: thumbnail
+label: Thumbnail
+image_style_mappings:
+  -
+    breakpoint_id: enviedessence.desktop
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: thumbnail_desktop
+  -
+    breakpoint_id: enviedessence.tablet
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: thumbnail_tablet
+  -
+    breakpoint_id: enviedessence.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: thumbnail_mobile
+breakpoint_group: enviedessence
+fallback_image_style: thumbnail_mobile

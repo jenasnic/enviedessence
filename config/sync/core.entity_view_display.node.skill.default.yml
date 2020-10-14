@@ -1,0 +1,79 @@
+uuid: d6624384-2643-4c76-a108-f3fa3f9cf441
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.skill.body
+    - field.field.node.skill.field_image
+    - field.field.node.skill.field_price
+    - field.field.node.skill.field_price_info
+    - field.field.node.skill.field_sessions
+    - field.field.node.skill.field_teaser
+    - field.field.node.skill.field_thumbnail
+    - node.type.skill
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.skill.default
+targetEntityType: node
+bundle: skill
+mode: default
+content:
+  body:
+    label: visually_hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: visually_hidden
+    settings:
+      view_mode: banner
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_price:
+    weight: 2
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_price_info:
+    weight: 3
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_sessions:
+    type: entity_reference_revisions_entity_view
+    weight: 4
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_teaser:
+    type: basic_string
+    weight: 6
+    region: content
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_thumbnail:
+    type: entity_reference_entity_id
+    weight: 5
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  links: true

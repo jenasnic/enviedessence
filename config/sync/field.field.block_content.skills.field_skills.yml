@@ -1,0 +1,28 @@
+uuid: d6ce0333-944f-45c4-afea-b79a41742047
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.skills
+    - field.storage.block_content.field_skills
+    - node.type.skill
+id: block_content.skills.field_skills
+field_name: field_skills
+entity_type: block_content
+bundle: skills
+label: compétences
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      skill: skill
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

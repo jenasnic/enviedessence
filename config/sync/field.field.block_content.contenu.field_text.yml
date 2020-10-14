@@ -1,0 +1,21 @@
+uuid: ced9c8d1-a2b5-4383-ab74-714054377430
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.contenu
+    - field.storage.block_content.field_text
+  module:
+    - text
+id: block_content.contenu.field_text
+field_name: field_text
+entity_type: block_content
+bundle: contenu
+label: texte
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,47 @@
+uuid: 5a48766a-1720-4c30-8a1f-b9b424b1e571
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.session.field_comment
+    - field.field.paragraph.session.field_day_of_week
+    - field.field.paragraph.session.field_place
+    - field.field.paragraph.session.field_time
+    - paragraphs.paragraphs_type.session
+  module:
+    - options
+id: paragraph.session.default
+targetEntityType: paragraph
+bundle: session
+mode: default
+content:
+  field_comment:
+    weight: 3
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_day_of_week:
+    weight: 0
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_place:
+    weight: 1
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_time:
+    weight: 2
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }
