@@ -7,6 +7,8 @@ dependencies:
     - field.field.block_content.banniere.field_image
     - field.field.block_content.banniere.field_subtitle
     - field.field.block_content.banniere.field_title
+  module:
+    - media_library
 id: block_content.banniere.default
 targetEntityType: block_content
 bundle: banniere
@@ -15,12 +17,9 @@ content:
   field_image:
     weight: 3
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      media_types: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: media_library_widget
     region: content
   field_subtitle:
     weight: 2
