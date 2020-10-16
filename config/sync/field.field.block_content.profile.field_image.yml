@@ -1,19 +1,19 @@
-uuid: 55a9da54-d345-4038-9610-dad911f08a68
+uuid: 62b5059b-a49f-40ea-a04e-165133015c32
 langcode: fr
 status: true
 dependencies:
   config:
-    - block_content.type.contenu
+    - block_content.type.profile
     - field.storage.block_content.field_image
     - media.type.image
-id: block_content.contenu.field_image
+id: block_content.profile.field_image
 field_name: field_image
 entity_type: block_content
-bundle: contenu
+bundle: profile
 label: image
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

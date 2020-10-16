@@ -1,0 +1,10 @@
+uuid: 6030cccf-c7cf-47d3-9490-1c769487dfa3
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.picture
+label: Picture
+targetEntityType: media
+cache: true

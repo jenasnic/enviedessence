@@ -1,17 +1,17 @@
-uuid: 0a054e67-927c-489c-b47b-ac62e025ed42
+uuid: 4b96d548-7206-4f1b-9b3f-dd6d5a906b22
 langcode: fr
 status: true
 dependencies:
   config:
-    - block_content.type.contenu
+    - block_content.type.profile
     - field.storage.block_content.field_title
-id: block_content.contenu.field_title
+id: block_content.profile.field_title
 field_name: field_title
 entity_type: block_content
-bundle: contenu
+bundle: profile
 label: titre
 description: ''
-required: false
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''

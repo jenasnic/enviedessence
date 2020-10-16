@@ -1,0 +1,15 @@
+uuid: 61149898-f9a3-479c-8dfd-292bb5bb88f8
+langcode: fr
+status: true
+dependencies: {  }
+name: picture_desktop
+label: 'Picture - desktop'
+effects:
+  09499bdc-bb53-4861-8fff-ab2a26a0c36b:
+    uuid: 09499bdc-bb53-4861-8fff-ab2a26a0c36b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 600
+      anchor: center-center

@@ -1,19 +1,19 @@
-uuid: 5feaa958-4a00-4c8b-8e8c-a04d7d894f8a
+uuid: 28b70c54-4233-40bb-9583-92eadbcc286f
 langcode: fr
 status: true
 dependencies:
   config:
-    - block_content.type.banniere
+    - block_content.type.banner
     - field.storage.block_content.field_image
     - media.type.image
-id: block_content.banniere.field_image
+id: block_content.banner.field_image
 field_name: field_image
 entity_type: block_content
-bundle: banniere
+bundle: banner
 label: image
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

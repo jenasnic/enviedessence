@@ -1,0 +1,15 @@
+uuid: 97026b50-a79c-45f3-92b5-786a171a1d50
+langcode: fr
+status: true
+dependencies: {  }
+name: picture_mobile
+label: 'Picture - mobile'
+effects:
+  dc8015ea-5655-4f8c-b35f-75325f349a54:
+    uuid: dc8015ea-5655-4f8c-b35f-75325f349a54
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 320
+      height: 240
+      anchor: center-center

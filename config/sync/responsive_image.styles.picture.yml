@@ -1,0 +1,30 @@
+uuid: 5fe49ddf-0e27-4709-9297-04d46a7c2dc4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - image.style.picture_desktop
+    - image.style.picture_mobile
+    - image.style.picture_tablet
+  theme:
+    - enviedessence
+id: picture
+label: Picture
+image_style_mappings:
+  -
+    breakpoint_id: enviedessence.desktop
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: picture_desktop
+  -
+    breakpoint_id: enviedessence.tablet
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: picture_tablet
+  -
+    breakpoint_id: enviedessence.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: picture_mobile
+breakpoint_group: enviedessence
+fallback_image_style: picture_mobile
