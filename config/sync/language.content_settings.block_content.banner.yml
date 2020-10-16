@@ -1,11 +1,11 @@
-uuid: 8bbb9524-13b4-4280-84c6-8809a0abf52b
+uuid: a14389a7-281f-48bf-9a24-34bcb06bc8d2
 langcode: fr
 status: true
 dependencies:
   config:
-    - block_content.type.contenu
-id: block_content.contenu
+    - block_content.type.banner
+id: block_content.banner
 target_entity_type_id: block_content
-target_bundle: contenu
+target_bundle: banner
 default_langcode: site_default
 language_alterable: false

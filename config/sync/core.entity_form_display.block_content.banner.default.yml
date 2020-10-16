@@ -1,25 +1,25 @@
-uuid: 6a63a36b-048e-4b14-bc39-69a8ba6d0cd3
+uuid: 15d5b108-8a6d-4451-bf39-db2b1a8dd3f5
 langcode: fr
 status: true
 dependencies:
   config:
-    - block_content.type.banniere
-    - field.field.block_content.banniere.field_image
-    - field.field.block_content.banniere.field_subtitle
-    - field.field.block_content.banniere.field_title
+    - block_content.type.banner
+    - field.field.block_content.banner.field_image
+    - field.field.block_content.banner.field_subtitle
+    - field.field.block_content.banner.field_title
   module:
     - media_library
-id: block_content.banniere.default
+id: block_content.banner.default
 targetEntityType: block_content
-bundle: banniere
+bundle: banner
 mode: default
 content:
   field_image:
+    type: media_library_widget
     weight: 3
     settings:
       media_types: {  }
     third_party_settings: {  }
-    type: media_library_widget
     region: content
   field_subtitle:
     weight: 2

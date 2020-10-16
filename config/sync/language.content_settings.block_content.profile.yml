@@ -1,11 +1,11 @@
-uuid: 072d7870-f184-4d62-91a8-616502007e4f
+uuid: 44b083d8-cfa9-441d-954d-2329f80b1af5
 langcode: fr
 status: true
 dependencies:
   config:
-    - block_content.type.banniere
-id: block_content.banniere
+    - block_content.type.profile
+id: block_content.profile
 target_entity_type_id: block_content
-target_bundle: banniere
+target_bundle: profile
 default_langcode: site_default
 language_alterable: false

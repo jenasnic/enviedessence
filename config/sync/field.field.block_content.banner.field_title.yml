@@ -1,14 +1,14 @@
-uuid: 837942cf-90ff-4c9a-9d02-df01042f3663
+uuid: f05606ef-d06f-46c6-ada1-a26df345b271
 langcode: fr
 status: true
 dependencies:
   config:
-    - block_content.type.banniere
+    - block_content.type.banner
     - field.storage.block_content.field_title
-id: block_content.banniere.field_title
+id: block_content.banner.field_title
 field_name: field_title
 entity_type: block_content
-bundle: banniere
+bundle: banner
 label: titre
 description: ''
 required: true

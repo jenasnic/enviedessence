@@ -1,16 +1,16 @@
-uuid: ced9c8d1-a2b5-4383-ab74-714054377430
+uuid: 1998fe48-b3ed-4e3f-ba2d-88816e35691c
 langcode: fr
 status: true
 dependencies:
   config:
-    - block_content.type.contenu
+    - block_content.type.profile
     - field.storage.block_content.field_text
   module:
     - text
-id: block_content.contenu.field_text
+id: block_content.profile.field_text
 field_name: field_text
 entity_type: block_content
-bundle: contenu
+bundle: profile
 label: texte
 description: ''
 required: true

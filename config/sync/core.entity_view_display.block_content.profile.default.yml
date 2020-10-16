@@ -1,27 +1,27 @@
-uuid: 0b35fed2-c70b-46af-a2c9-0761fee476a5
+uuid: c0415e3c-4c85-4ae3-82ad-c0ff28affbf7
 langcode: fr
 status: true
 dependencies:
   config:
-    - block_content.type.contenu
-    - field.field.block_content.contenu.field_image
-    - field.field.block_content.contenu.field_text
-    - field.field.block_content.contenu.field_title
+    - block_content.type.profile
+    - field.field.block_content.profile.field_image
+    - field.field.block_content.profile.field_text
+    - field.field.block_content.profile.field_title
   module:
     - text
-id: block_content.contenu.default
+id: block_content.profile.default
 targetEntityType: block_content
-bundle: contenu
+bundle: profile
 mode: default
 content:
   field_image:
-    type: entity_reference_entity_view
     weight: 1
     label: visually_hidden
     settings:
-      view_mode: default
+      view_mode: picture
       link: false
     third_party_settings: {  }
+    type: entity_reference_entity_view
     region: content
   field_text:
     weight: 2

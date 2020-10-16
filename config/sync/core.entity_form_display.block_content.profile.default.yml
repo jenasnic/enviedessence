@@ -1,26 +1,26 @@
-uuid: 20c9dd5e-5964-4553-b604-ffd2994721b2
+uuid: bd911ec8-a9b9-435d-a087-1cbc12f95957
 langcode: fr
 status: true
 dependencies:
   config:
-    - block_content.type.contenu
-    - field.field.block_content.contenu.field_image
-    - field.field.block_content.contenu.field_text
-    - field.field.block_content.contenu.field_title
+    - block_content.type.profile
+    - field.field.block_content.profile.field_image
+    - field.field.block_content.profile.field_text
+    - field.field.block_content.profile.field_title
   module:
     - media_library
     - text
-id: block_content.contenu.default
+id: block_content.profile.default
 targetEntityType: block_content
-bundle: contenu
+bundle: profile
 mode: default
 content:
   field_image:
-    type: media_library_widget
     weight: 2
     settings:
       media_types: {  }
     third_party_settings: {  }
+    type: media_library_widget
     region: content
   field_text:
     weight: 3
