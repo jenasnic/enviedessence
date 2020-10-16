@@ -1,4 +1,4 @@
 import '../sass/style.scss';
 
-console.log('Envidessence');
-
+import './component/menu';
+import './component/skills';

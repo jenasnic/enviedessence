@@ -1,0 +1,21 @@
+h2 {
+    font-size: 3.5rem;
+    position: relative;
+    margin: calc(#{$default-spacing} / 2) 0 $default-spacing 0;
+    padding: 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+
+    &:after {
+        background-color: $color-pompadour;
+        bottom: 0;
+        color: $primary-color;
+        content: '';
+        height: 1px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50px);
+        width: 100px;
+    }
+}

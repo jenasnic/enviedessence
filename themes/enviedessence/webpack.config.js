@@ -35,6 +35,7 @@ let config = {
                 options: {
                     name: '[name]-[hash].[ext]',
                     outputPath: '/img',
+                    publicPath: '/themes/enviedessence/build/img'
                 },
             },
             {
@@ -42,6 +43,8 @@ let config = {
                 loader: 'url-loader',
                 options: {
                     limit: 10000,
+                    outputPath: '/img',
+                    publicPath: '/themes/enviedessence/build/img'
                 },
             },
             {
@@ -50,6 +53,7 @@ let config = {
                 options: {
                     name: '[name]-[hash].[ext]',
                     outputPath: '/font',
+                    publicPath: '/themes/enviedessence/build/font'
                 },
             },
         ]

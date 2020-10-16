@@ -1,0 +1,118 @@
+.field-skills {
+    width: 100%;
+
+    .skill-list-wrapper {
+        font-size: 2rem;
+        width: 100%;
+
+        .skill-list {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+
+            .skill-list-item {
+                overflow: hidden;
+                position: relative;
+                transition: all 1.5s;
+
+                &:before {
+                    background-color: transparentize($color-pompadour, $overlay-transparentize);
+                    content: '';
+                    height: 100%;
+                    opacity: 1;
+                    position: absolute;
+                    transition: all 1.5s;
+                    width: 100%;
+                    z-index: 2;
+                }
+
+                &.active {
+                    box-shadow: 2px 2px 4px transparentize($color-mine-shaft, 0.5);
+
+                    &:before {
+                        opacity: 0;
+                    }
+                }
+
+                .skill-teaser {
+                    picture {
+                        display: flex;
+                        justify-content: center;
+
+                        img {
+                            max-height: 100%;
+                            max-width: 100%;
+                        }
+                    }
+
+                    .skill {
+                        display: none;
+                    }
+                }
+            }
+
+            @for $i from 1 through 10 {
+                &[data-count="#{$i}"] {
+                    .skill-list-item {
+                        width: calc(100% / #{$i} - #{$default-spacing});
+                    }
+                }
+            }
+        }
+    }
+
+    .skill-title-wrapper {
+        height: 3rem;
+        padding: 5rem 0;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+
+        .skill-title {
+            font-size: 3rem;
+            font-weight: 500;
+            left: 50%;
+            opacity: 0;
+            position: absolute;
+            text-align: center;
+            text-shadow: 0 0 0.5em $color-white;
+            transform: translateX(-50%) translateY(-50%);
+            transition: all 2s;
+            top: 50%;
+
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
+
+    .skill-detail-wrapper {
+        background-color: $color-white;
+        border: 1px solid $color-pompadour;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        position: relative;
+        width: 70%;
+
+        .skill-detail {
+            font-size: 2rem;
+            left:0;
+            opacity: 0;
+            padding: 1em;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all 1s;
+            width: 100%;
+
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
+}

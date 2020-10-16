@@ -1,0 +1,22 @@
+.block-skills {
+    margin-bottom: $default-spacing;
+    padding: 0 5% $default-spacing 5%;
+    position: relative;
+    width: 100vw;
+
+    h2 {
+        text-shadow: 0 0 0.5em $color-white;
+    }
+
+    & > img {
+        height: 100%;
+        left: 0;
+        object-fit: fill;
+        object-position: center;
+        opacity: 0.1;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+    }
+}
