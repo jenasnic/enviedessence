@@ -5,6 +5,7 @@ dependencies:
   config:
     - block_content.type.profile
     - field.field.block_content.profile.field_image
+    - field.field.block_content.profile.field_signing
     - field.field.block_content.profile.field_text
     - field.field.block_content.profile.field_title
   module:
@@ -22,6 +23,14 @@ content:
       link: false
     third_party_settings: {  }
     type: entity_reference_entity_view
+    region: content
+  field_signing:
+    weight: 3
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   field_text:
     weight: 2
