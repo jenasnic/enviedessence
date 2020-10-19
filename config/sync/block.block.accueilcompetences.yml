@@ -1,0 +1,25 @@
+uuid: a967b99e-c80d-41b0-b426-eca9f3a233c1
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:skills:e7da0845-0a24-42db-b5c2-de3fa39fc180'
+  module:
+    - block_content
+  theme:
+    - enviedessence
+id: accueilcompetences
+theme: enviedessence
+region: homepage
+weight: 0
+provider: null
+plugin: 'block_content:e7da0845-0a24-42db-b5c2-de3fa39fc180'
+settings:
+  id: 'block_content:e7da0845-0a24-42db-b5c2-de3fa39fc180'
+  label: 'Accueil - Compétences'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
