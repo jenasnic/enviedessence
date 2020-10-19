@@ -6,8 +6,9 @@ dependencies:
     - core.entity_view_mode.media.picture
     - field.field.media.image.field_media_image
     - media.type.image
+    - responsive_image.styles.picture
   module:
-    - image
+    - responsive_image
 _core:
   default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
 id: media.image.picture
@@ -15,18 +16,18 @@ targetEntityType: media
 bundle: image
 mode: picture
 content:
-  thumbnail:
-    type: image
+  field_media_image:
+    type: responsive_image
     weight: 0
     region: content
     label: visually_hidden
     settings:
-      image_style: ''
+      responsive_image_style: picture
       image_link: ''
     third_party_settings: {  }
 hidden:
   created: true
-  field_media_image: true
   langcode: true
   name: true
+  thumbnail: true
   uid: true

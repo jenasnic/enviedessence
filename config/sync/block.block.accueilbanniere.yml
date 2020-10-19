@@ -1,0 +1,25 @@
+uuid: 083ae30b-9df6-412e-b4f7-bc6688bf967a
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:528ae719-7f07-4762-b510-649c3c0ff8f2'
+  module:
+    - block_content
+  theme:
+    - enviedessence
+id: accueilbanniere
+theme: enviedessence
+region: homepage
+weight: -2
+provider: null
+plugin: 'block_content:528ae719-7f07-4762-b510-649c3c0ff8f2'
+settings:
+  id: 'block_content:528ae719-7f07-4762-b510-649c3c0ff8f2'
+  label: 'Accueil - Bannière'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
