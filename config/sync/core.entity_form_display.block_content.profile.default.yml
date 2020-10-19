@@ -5,6 +5,7 @@ dependencies:
   config:
     - block_content.type.profile
     - field.field.block_content.profile.field_image
+    - field.field.block_content.profile.field_signing
     - field.field.block_content.profile.field_text
     - field.field.block_content.profile.field_title
   module:
@@ -21,6 +22,14 @@ content:
       media_types: {  }
     third_party_settings: {  }
     type: media_library_widget
+    region: content
+  field_signing:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_text:
     weight: 3
