@@ -1,0 +1,31 @@
+.with-background {
+    overflow: hidden;
+    position: relative;
+
+    & > picture {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+        animation-name: background-scaling;
+        animation-duration: 2s;
+
+        > img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    @keyframes background-scaling {
+        from {
+            transform: scale(1.1);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+}

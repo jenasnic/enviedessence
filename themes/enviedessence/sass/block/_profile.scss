@@ -1,0 +1,40 @@
+.block-profile {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0 5% $default-spacing 5%;
+    width: 100vw;
+
+    .profile {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+
+        &__picture {
+            flex: 0 0 40%;
+        }
+
+        &__content {
+            display: flex;
+            flex: 0 0 60%;
+            flex-direction: column;
+            font-size: 1.8rem;
+            justify-content: space-between;
+            padding-left: $default-spacing;
+            text-align: justify;
+
+            .text {
+                > p {
+                    padding-bottom: 0.6em;
+                }
+            }
+
+            .signing {
+                font-style: italic;
+                font-weight: 500;
+                padding: 0.5em;
+                text-align: right;
+            }
+        }
+    }
+}

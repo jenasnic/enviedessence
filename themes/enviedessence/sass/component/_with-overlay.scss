@@ -1,0 +1,12 @@
+.with-overlay {
+    position: relative;;
+
+    &:before {
+        background-color: transparentize($secondary-color, $overlay-transparentize);
+        content: '';
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+}

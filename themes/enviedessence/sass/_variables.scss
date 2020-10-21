@@ -9,7 +9,8 @@ $font-text: 'Montserrat', sans-serif;
 // Colors
 
 $color-mine-shaft: #333333;
-$color-pompadour: #74005C;
+$color-pompadour: #74005c;
+$color-white: #ffffff;
 
 $primary-color: $color-mine-shaft;
 $secondary-color: $color-pompadour;
@@ -17,7 +18,11 @@ $secondary-color: $color-pompadour;
 // Media Queries
 
 $breakpoints: (
-  short: 380px,
-  medium: 768px,
-  large: 1366px
+  low: 768px,
+  high: 1200px
 );
+
+// Misc
+
+$default-spacing: 50px;
+$overlay-transparentize: 0.65;

@@ -1,0 +1,29 @@
+<div{{ attributes.addClass('field-skills') }}>
+
+    <div class="skill-list-wrapper">
+        <div class="skill-list" data-count="{{ items|length }}">
+            {% for item in items %}
+            <div class="skill-list-item" data-skill-index="{{ loop.index }}">
+                {{ item }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="skill-title-wrapper">
+        {% for item in items %}
+        <div class="skill-title" data-skill-index="{{ loop.index }}">
+            {{ item.content['#node'].getTitle() }}
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="skill-detail-wrapper">
+        {% for item in items %}
+        <div class="skill-detail" data-skill-index="{{ loop.index }}">
+            {{ item.content['#node'].field_teaser.value }}
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
