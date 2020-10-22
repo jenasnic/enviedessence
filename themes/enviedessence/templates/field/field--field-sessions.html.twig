@@ -1,0 +1,8 @@
+<div{{ attributes.addClass('field-sessions') }}>
+    <h2>Consultations</h2>
+    <div class="sessions">
+    {% for item in items %}
+        {{ item }}
+    {% endfor %}
+    </div>
+</div>
