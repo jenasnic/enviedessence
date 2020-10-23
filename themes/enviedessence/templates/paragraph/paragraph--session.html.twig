@@ -1,0 +1,16 @@
+<div{{ attributes.addClass('session') }}>
+    <div class="session__day">
+        {{ content.field_day_of_week }}
+    </div>
+    <div class="session__time">
+        {{ content.field_time }}
+    </div>
+    <div class="session__place">
+        {{ content.field_place }}
+    </div>
+    {% if content.field_comment %}
+        <div class="session__comment">
+            {{ content.field_comment }}
+        </div>
+    {% endif %}
+</div>

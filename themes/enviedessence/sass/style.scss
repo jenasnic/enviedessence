@@ -3,16 +3,21 @@
 @import 'media-queries';
 @import 'fonts';
 
+@import 'block/banner';
+@import 'block/profile';
+@import 'block/skills';
+
 @import 'component/with-background';
 @import 'component/with-overlay';
+
+@import 'field/sessions';
+@import 'field/skills';
 
 @import 'layout/footer';
 @import 'layout/global';
 @import 'layout/header';
 @import 'layout/typo';
 
-@import 'block/banner';
-@import 'block/profile';
-@import 'block/skills';
+@import 'node/skill';
 
-@import 'field/skills';
+@import 'paragraph/session';

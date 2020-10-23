@@ -1,0 +1,29 @@
+<article{{ attributes.addClass('skill-full') }}>
+
+    <section class="banner with-overlay with-background">
+        {{ content.field_image }}
+        <div class="title-wrapper">
+            <h1>{{ node.getTitle() }}</h1>
+        </div>
+    </section>
+
+    <section class="content">
+        {{ content.body }}
+    </section>
+
+    <section class="infos">
+        {{ content.field_sessions }}
+        <div class="price">
+            <div class="price__value">
+                {{ content.field_price }}
+                <span class="icon icon-euro"></span>
+            </div>
+            {% if content.field_price_info %}
+            <div class="price__info">
+                {{ content.field_price_info }}
+            </div>
+            {% endif %}
+        </div>
+    </section>
+
+</article>
