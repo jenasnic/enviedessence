@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.skill.field_price
     - field.field.node.skill.field_price_info
     - field.field.node.skill.field_sessions
+    - field.field.node.skill.field_subtitle
     - field.field.node.skill.field_teaser
     - field.field.node.skill.field_thumbnail
     - node.type.skill
@@ -23,13 +24,13 @@ content:
   body:
     label: visually_hidden
     type: text_default
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
   field_image:
     type: entity_reference_entity_view
-    weight: 0
+    weight: 1
     label: visually_hidden
     settings:
       view_mode: banner
@@ -37,7 +38,7 @@ content:
     third_party_settings: {  }
     region: content
   field_price:
-    weight: 2
+    weight: 3
     label: visually_hidden
     settings:
       link_to_entity: false
@@ -45,7 +46,7 @@ content:
     type: string
     region: content
   field_price_info:
-    weight: 3
+    weight: 4
     label: visually_hidden
     settings: {  }
     third_party_settings: {  }
@@ -53,27 +54,29 @@ content:
     region: content
   field_sessions:
     type: entity_reference_revisions_entity_view
-    weight: 4
+    weight: 5
     label: visually_hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
     region: content
-  field_teaser:
-    type: basic_string
+  field_subtitle:
+    weight: 0
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_thumbnail:
+    type: entity_reference_entity_id
     weight: 6
     region: content
     label: visually_hidden
     settings: {  }
     third_party_settings: {  }
-  field_thumbnail:
-    type: entity_reference_entity_id
-    weight: 5
-    region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
 hidden:
+  field_teaser: true
   langcode: true
   links: true

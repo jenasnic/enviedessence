@@ -17,6 +17,7 @@ $transition-duration: 1.5s;
                 overflow: hidden;
                 position: relative;
                 transition: all $transition-duration;
+                text-decoration: none;
 
                 &:before {
                     background-color: transparentize($color-pompadour, $overlay-transparentize);

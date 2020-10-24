@@ -3,9 +3,13 @@
     <div class="skill-list-wrapper">
         <div class="skill-list" data-count="{{ items|length }}">
             {% for item in items %}
-            <div class="skill-list-item" data-skill-index="{{ loop.index }}">
+            <a
+                href="{{ path('entity.node.canonical', {'node': item.content['#node'].id()}) }}"
+                data-skill-index="{{ loop.index }}"
+                class="skill-list-item"
+            >
                 {{ item }}
-            </div>
+            </a>
             {% endfor %}
         </div>
     </div>
