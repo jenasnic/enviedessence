@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.skill.field_price
     - field.field.node.skill.field_price_info
     - field.field.node.skill.field_sessions
+    - field.field.node.skill.field_subtitle
     - field.field.node.skill.field_teaser
     - field.field.node.skill.field_thumbnail
     - node.type.skill
@@ -46,4 +47,5 @@ hidden:
   field_price: true
   field_price_info: true
   field_sessions: true
+  field_subtitle: true
   langcode: true

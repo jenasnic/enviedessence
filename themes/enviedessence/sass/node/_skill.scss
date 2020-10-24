@@ -23,6 +23,13 @@
     .content {
         font-size: 2rem;
         padding: $default-spacing 5% 0 5%;
+
+        .icon {
+            color: $color-pompadour;
+            float: left;
+            font-size: 5em;
+            padding-right: 0.5em;
+        }
     }
 
     .infos {

@@ -1,0 +1,35 @@
+{% set classes = [
+    'contact',
+    'with-overlay',
+    'with-background',
+] %}
+
+<div{{ attributes.addClass(classes) }}>
+
+    {{ content.field_image }}
+
+    <div class="contact-info">
+        <h1>{{ node.getTitle() }}</h1>
+        <div class="phone">
+            <span class="icon icon-phone"><span>
+            {{ content.field_phone }}
+        </div>
+        <div class="email">
+            <span class="icon icon-email-full"><span>
+            {{ content.field_email }}
+        </div>
+        <div class="home">
+            <a href="{{ content.field_home_link.0['#url'] }}" targer="_blank">
+                <span class="icon icon-home"><span>
+                {{ content.field_home_address }}
+            </a>
+        </div>
+        <div class="office">
+            <a href="{{ content.field_home_link.0['#url'] }}" targer="_blank">
+                <span class="icon icon-office"><span>
+                {{ content.field_office_address }}
+            </a>
+        </div>
+    </div>
+
+</div>
