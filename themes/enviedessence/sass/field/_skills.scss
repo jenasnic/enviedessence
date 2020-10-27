@@ -13,22 +13,50 @@ $transition-duration: 1.5s;
             justify-content: space-between;
             flex-direction: row;
 
+            @include below(low) {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                grid-column-gap: 0;
+                grid-row-gap: 0;
+            }
+
+            @include above(low) {
+                @for $i from 1 through 10 {
+                    &[data-count="#{$i}"] {
+                        .skill-list-item {
+                            width: calc(100% / #{$i} - #{$default-spacing});
+                        }
+                    }
+                }
+            }
+
             .skill-list-item {
                 overflow: hidden;
                 position: relative;
-                transition: all $transition-duration;
                 text-decoration: none;
+                transition: all $transition-duration;
 
-                &:before {
-                    background-color: transparentize($color-pompadour, $overlay-transparentize);
-                    content: '';
-                    height: 100%;
-                    opacity: 1;
-                    position: absolute;
-                    transition: all $transition-duration;
-                    width: 100%;
-                    z-index: 2;
+                @include below(low) {
+                    grid-area: 1 / 1 / 2 / 2;
+                    opacity: 0;
+                    pointer-events: none;
+                    z-index: 1;
                 }
+
+                @include above(low) {
+                    &:before {
+                        background-color: transparentize($color-pompadour, $overlay-transparentize);
+                        content: '';
+                        height: 100%;
+                        opacity: 1;
+                        position: absolute;
+                        transition: all $transition-duration;
+                        width: 100%;
+                        z-index: 2;
+                    }
+                }
+
 
                 .skill-teaser {
                     picture {
@@ -36,23 +64,49 @@ $transition-duration: 1.5s;
                         justify-content: center;
 
                         img {
-                            filter: grayscale(100%);
                             max-height: 100%;
                             max-width: 100%;
                             transition: all $transition-duration;
+
+                            @include above(low) {
+                                filter: grayscale(100%);
+                            }
                         }
                     }
 
                     .skill {
-                        display: none;
+                        @include below(low) {
+                            &__title {
+                                color: $primary-color;
+                                font-size: 2.5rem;
+                                font-weight: 500;
+                                padding: 0.7em 0;                            }
+                                text-align: center;
+
+                            &__teaser {
+                                display: none;
+                            }
+                        }
+
+                        @include above(low) {
+                            display: none;
+                        }
                     }
                 }
 
                 &.active {
-                    box-shadow: 0 7px 12px -3px transparentize($color-pompadour, 0.5);
+                    @include below(low) {
+                        opacity: 1;
+                        pointer-events: auto;
+                        z-index: 2;
+                    }
 
-                    &:before {
-                        opacity: 0;
+                    @include above(low) {
+                        box-shadow: 0 7px 12px -3px transparentize($color-pompadour, 0.5);
+
+                        &:before {
+                            opacity: 0;
+                        }
                     }
 
                     .skill-teaser {
@@ -61,14 +115,6 @@ $transition-duration: 1.5s;
                                 filter: grayscale(0);
                             }
                         }
-                    }
-                }
-            }
-
-            @for $i from 1 through 10 {
-                &[data-count="#{$i}"] {
-                    .skill-list-item {
-                        width: calc(100% / #{$i} - #{$default-spacing});
                     }
                 }
             }
@@ -81,6 +127,11 @@ $transition-duration: 1.5s;
         overflow: hidden;
         position: relative;
         width: 100%;
+
+        @include below(low) {
+            display: none;
+        }
+
 
         .skill-title {
             font-size: 3rem;
@@ -111,6 +162,10 @@ $transition-duration: 1.5s;
         position: relative;
         width: 70%;
 
+        @include below(low) {
+            display: none;
+        }
+
         .skill-detail {
             font-size: 2rem;
             left:0;
@@ -126,6 +181,23 @@ $transition-duration: 1.5s;
             &.active {
                 opacity: 1;
             }
+        }
+    }
+
+    .skill-button-wrapper {
+        align-items: center;
+        display: flex;
+        font-size: 3.4rem;
+        justify-content: center;
+
+        .icon {
+            cursor: pointer;
+            padding: 0 0.3em;
+            z-index: 1;
+        }
+
+        @include above(low) {
+            display: none;
         }
     }
 }

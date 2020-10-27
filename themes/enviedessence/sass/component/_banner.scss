@@ -1,4 +1,4 @@
-.block-banner {
+.banner {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -11,15 +11,24 @@
     .title-wrapper {
         color: $color-white;
         font-size: 1rem;
+        text-align: center;
         z-index: 1;
 
         > h1 {
             font-size: 7.5em;
+
+            @include below(low) {
+                font-size: 3.5em;
+            }
         }
 
         > .subtitle {
             font-size: 2em;
             font-style: italic;
+
+            @include below(low) {
+                font-size: 1.5em;
+            }
         }
     }
 }

@@ -1,9 +1,16 @@
 .field-sessions {
     .sessions {
-        align-items: flex-start;
+        align-items: stretch;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
+        margin-bottom: -50px;
         width: 100%;
+
+        @include below(low) {
+            align-items: center;
+            flex-direction: column;
+        }
     }
 }

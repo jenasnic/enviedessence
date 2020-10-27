@@ -1,3 +1,5 @@
+$icon-height: 4.3rem;
+
 header {
     align-items: center;
     display: flex;
@@ -6,15 +8,22 @@ header {
     height: auto;
     position: absolute;
     top: 0;
+    transition: all 1.5s;
+    transform: translateY(calc(-100% + #{$icon-height}));
     width: 100%;
     z-index: 2;
 
+    @include below(low) {
+        transform: translateY(-100vh);
+    }
+
     > nav {
         background-color: transparentize($color-mine-shaft, 0.5);
-        max-height: 0;
-        transition: all 1.5s;
-        overflow: hidden;
         width: 100%;
+
+        @include below(low) {
+            background-color: transparentize($color-mine-shaft, 0.1);
+        }
 
         ul {
             align-items: center;
@@ -25,10 +34,29 @@ header {
             padding: 3rem 0;
             margin: 0;
 
+            @include below(low) {
+                align-items: flex-start;
+                flex-direction: column;
+                height: 100vh;
+                padding: 20px;
+            }
+
             li {
                 font-size: 1.8rem;
+                font-weight: 500;
                 margin: 0 1em;
                 position: relative;
+                text-align: center;
+
+                @include below(high) {
+                    font-size: 1.4rem;
+                }
+
+                @include below(low) {
+                    font-size: 2rem;
+                    margin: 13px 15px;
+                    font-weight: 700;
+                }
 
                 &:before, &:after {
                     background-color: $color-white;
@@ -43,6 +71,10 @@ header {
 
                 &:before {
                     top: -0.5em;
+
+                    @include below(low) {
+                        display: none;
+                    }
                 }
 
                 &:after {
@@ -58,6 +90,10 @@ header {
                 &:hover {
                     &:before, &:after {
                         width: 50%;
+
+                        @include below(low) {
+                            width: 100%;
+                        }
                     }
                 }
             }
@@ -67,18 +103,27 @@ header {
     .icon-arrow {
         color: $color-white;
         cursor: pointer;
-        font-size: 4rem;
+        font-size: 4.3rem;
+        height: $icon-height;
         transform: rotateX(180deg);
         transition: all 1.2s 0.5s;
+
+        @include below(low) {
+            position: absolute;
+            right: 20px;
+            bottom: -5rem;
+        }
     }
 
     &.active {
-        > nav {
-            max-height: 8rem;
-        }
+        transform: translateY(0);
 
         .icon-arrow {
             transform: rotateX(0);
+
+            @include below(low) {
+                bottom: 2rem;
+            }
         }
     }
 }

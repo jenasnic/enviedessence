@@ -4,6 +4,10 @@
     position: relative;
     width: 100vw;
 
+    @include below(low) {
+        margin-bottom: 0;
+    }
+
     h2 {
         text-shadow: 0 0 0.5em $color-white;
     }
