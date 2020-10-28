@@ -10,11 +10,12 @@
     width: 100vw;
 
     .contact-info {
+        background-color: transparentize($color-mine-shaft, 0.5);
         border: 1px solid $color-white;
         color: $color-white;
         font-size: 2rem;
         padding: 5%;
-        z-index: 2;
+        z-index: 1;
 
         > h1 {
             font-size: 2em;

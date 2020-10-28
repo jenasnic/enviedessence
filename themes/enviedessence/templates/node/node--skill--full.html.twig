@@ -4,6 +4,11 @@
         {{ content.field_image }}
         <div class="title-wrapper">
             <h1>{{ node.getTitle() }}</h1>
+            {% if content.field_subtitle %}
+                <div class="subtitle">
+                    {{ content.field_subtitle }}
+                </div>
+            {% endif %}
         </div>
     </section>
 

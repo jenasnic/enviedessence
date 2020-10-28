@@ -11,6 +11,7 @@ export default class TurningItem {
     currentItem;
     itemCount;
     options;
+    turnWaiting;
 
     /**
     * @param wrapper element wa want to rotate children
@@ -54,7 +55,7 @@ export default class TurningItem {
             this.selectItem(item);
             this.disableTurning();
         });
-        item.addEventListener('mouseleave', this.enableTurning);
+        item.addEventListener('mouseleave', this.enableTurning());
     };
 
     /**
@@ -83,19 +84,27 @@ export default class TurningItem {
     */
     initTurning = () => {
         this.turning = true;
-        setTimeout(() => { this.turnItem(); }, this.options.speed);
+        this.turnWaiting = setTimeout(() => { this.turnItem(); }, this.options.speed);
     };
 
     /**
     * Select next item of dictionary.
+    *
+    * @param bool force
+    * @param int direction
     */
-    turnItem = () => {
+    turnItem = (force = false, direction = 1) => {
+        if (force) {
+            this.turning = true;
+            clearTimeout(this.turnWaiting);
+        }
+
         if (this.turning) {
-            this.currentItem = (this.currentItem + 1) % this.itemCount;
+            this.currentItem = (this.currentItem + direction + this.itemCount) % this.itemCount;
             this.selectCurrentItem();
         }
 
-        setTimeout(() => { this.turnItem(); }, this.options.speed);
+        this.turnWaiting = setTimeout(() => { this.turnItem(); }, this.options.speed);
     };
 
     /**

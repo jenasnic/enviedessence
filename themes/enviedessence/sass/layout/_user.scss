@@ -1,0 +1,38 @@
+.path-user {
+    .page-content {
+        header, footer {
+            display: none;
+        }
+
+        #user-login-form {
+            align-items: center;
+            background-color: $color-pompadour;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            width: 100vw;
+
+            .form-item {
+                color: $color-white;
+                display: flex;
+                font-size: 1.3rem;
+                flex-direction: column;
+                margin-bottom: 1em;
+                max-width: 200px;
+
+                label {
+                    margin-bottom: 0.5em;
+                }
+
+                .description {
+                    display: none;
+                }
+            }
+
+            .form-actions {
+                margin-top: 2em;
+            }
+        }
+    }
+}

@@ -5,13 +5,26 @@
     padding: 0 5% $default-spacing 5%;
     width: 100vw;
 
+    @include below(low) {
+        padding-bottom: 20px;
+    }
+
     .profile {
         flex-grow: 1;
         display: flex;
         flex-direction: row;
 
+        @include below(low) {
+            flex-direction: column;
+        }
+
         &__picture {
             flex: 0 0 40%;
+
+            @include below(low) {
+                flex: 0 0 60vh;
+                width: 100%;
+            }
         }
 
         &__content {
@@ -22,6 +35,12 @@
             justify-content: space-between;
             padding-left: $default-spacing;
             text-align: justify;
+
+            @include below(low) {
+                font-size: 1.5rem;
+                padding-left: 0;
+                padding-top: 20px;
+            }
 
             .signing {
                 font-style: italic;
