@@ -17,6 +17,10 @@
         padding: 5%;
         z-index: 1;
 
+        @include below(low) {
+            font-size: 1.6rem;
+        }
+
         > h1 {
             font-size: 2em;
             margin-bottom: 1em;

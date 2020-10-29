@@ -14,11 +14,7 @@ $transition-duration: 1.5s;
             flex-direction: row;
 
             @include below(low) {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr;
-                grid-column-gap: 0;
-                grid-row-gap: 0;
+                flex-direction: column;
             }
 
             @include above(low) {
@@ -47,13 +43,6 @@ $transition-duration: 1.5s;
                     position: relative;
                     text-decoration: none;
                     transition: all $transition-duration;
-
-                    @include below(low) {
-                        grid-area: 1 / 1 / 2 / 2;
-                        opacity: 0;
-                        pointer-events: none;
-                        z-index: 1;
-                    }
 
                     @include above(low) {
                         &:before {
@@ -109,12 +98,6 @@ $transition-duration: 1.5s;
 
                 &.active {
                     > .link-wrapper {
-                        @include below(low) {
-                            opacity: 1;
-                            pointer-events: auto;
-                            z-index: 2;
-                        }
-
                         @include above(low) {
                             box-shadow: 0 7px 12px -3px transparentize($theme-color, 0.5);
 
@@ -199,23 +182,6 @@ $transition-duration: 1.5s;
             &.active {
                 opacity: 1;
             }
-        }
-    }
-
-    .skill-button-wrapper {
-        align-items: center;
-        display: flex;
-        font-size: 3.4rem;
-        justify-content: center;
-
-        .icon {
-            cursor: pointer;
-            padding: 0 0.3em;
-            z-index: 1;
-        }
-
-        @include above(low) {
-            display: none;
         }
     }
 }
