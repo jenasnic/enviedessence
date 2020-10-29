@@ -1,10 +1,18 @@
 <section{{ attributes.addClass('block-profile') }}>
     <h2>{{ content.field_title }}</h2>
     <div class="profile">
-        <div class="profile__picture with-background">
+        <div
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            class="profile__picture with-background"
+        >
             {{ content.field_image }}
         </div>
-        <div class="profile__content">
+        <div
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            class="profile__content"
+        >
             <div class="text">
                 {{ content.field_text }}
             </div>

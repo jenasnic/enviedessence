@@ -2,7 +2,7 @@
     position: relative;;
 
     &:before {
-        background-color: transparentize($secondary-color, $overlay-transparentize);
+        background-color: transparentize($theme-color, $overlay-transparentize);
         content: '';
         height: 100%;
         position: absolute;

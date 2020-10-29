@@ -8,7 +8,7 @@
         }
 
         .icon {
-            color: $color-pompadour;
+            color: $theme-color;
             float: left;
             font-size: 5em;
             padding-right: 0.5em;
@@ -31,7 +31,7 @@
                 font-size: 1em;
 
                 .icon {
-                    color: $color-pompadour;
+                    color: $theme-color;
                     font-size: 0.5em;
                 }
             }
