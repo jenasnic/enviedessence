@@ -33,8 +33,6 @@ export default class FieldSkills {
             this.skills.querySelector('.skill-list'),
             turningOptions,
         );
-
-        this.nextPrevAction();
     };
 
     /**
@@ -79,14 +77,5 @@ export default class FieldSkills {
         });
 
         return maxHeight;
-    };
-
-    nextPrevAction = () => {
-        this.skills.querySelector('.skill-button-wrapper .icon-left').addEventListener('click', () => {
-            this.turningSkills.turnItem(true, -1);
-        });
-        this.skills.querySelector('.skill-button-wrapper .icon-right').addEventListener('click', () => {
-            this.turningSkills.turnItem(true, 1);
-        });
     };
 }
