@@ -171,10 +171,12 @@ $transition-duration: 1.5s;
         box-shadow: 0 15px 20px -10px transparentize($theme-color, 0.7),
             0 5px 25px 0 transparentize($theme-color, 0.9);
         align-items: center;
+        box-sizing: content-box;
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin: 0 auto;
+        padding: $default-spacing;
         position: relative;
         width: 70%;
 
@@ -184,7 +186,7 @@ $transition-duration: 1.5s;
 
         .skill-detail {
             font-size: 2rem;
-            left:0;
+            left: 5%;
             opacity: 0;
             padding: 1em;
             position: absolute;
@@ -192,7 +194,7 @@ $transition-duration: 1.5s;
             top: 50%;
             transform: translateY(-50%);
             transition: all $transition-duration;
-            width: 100%;
+            width: 90%;
 
             &.active {
                 opacity: 1;
