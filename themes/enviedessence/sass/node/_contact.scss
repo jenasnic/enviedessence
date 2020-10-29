@@ -25,11 +25,48 @@
 
         > div {
             margin-bottom: 0.6em;
+            position: relative;
+
+            &.email, &.home {
+                margin-bottom: 0.9em;
+                padding-bottom: 0.9em;
+
+                &:after {
+                    background-color: $color-white;
+                    content: '';
+                    height: 1px;
+                    width: 30%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            &.home, &.office {
+                line-height: 1.5em;
+            }
 
             > a {
                 color: $color-white;
-                font-size: 0.8em;
+                display: block;
+                font-size: 1em;
+                font-weight: 300;
                 text-decoration: none;
+
+                > .icon {
+                    margin-right: 0.5em;
+
+                    &:before {
+                        transition: all 0.8s;
+                    }
+                }
+
+                &:hover {
+                    .icon:before {
+                        transform: scale(1.5);
+                    }
+                }
             }
         }
     }

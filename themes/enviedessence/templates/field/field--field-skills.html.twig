@@ -3,18 +3,25 @@
     <div class="skill-list-wrapper">
         <div class="skill-list" data-count="{{ items|length }}">
             {% for item in items %}
-            <a
-                href="{{ path('entity.node.canonical', {'node': item.content['#node'].id()}) }}"
-                data-skill-index="{{ loop.index }}"
+            <div
                 class="skill-list-item"
+                data-skill-index="{{ loop.index }}"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-delay="{{ 300 * loop.index0 }}"
             >
-                {{ item }}
-            </a>
+                <a
+                    href="{{ path('entity.node.canonical', {'node': item.content['#node'].id()}) }}"
+                    class="link-wrapper"
+                >
+                    {{ item }}
+                </a>
+            </div>
             {% endfor %}
         </div>
     </div>
 
-    <div class="skill-title-wrapper">
+    <div class="skill-title-wrapper" data-aos="fade-up">
         {% for item in items %}
         <div class="skill-title" data-skill-index="{{ loop.index }}">
             {{ item.content['#node'].getTitle() }}
@@ -22,7 +29,7 @@
         {% endfor %}
     </div>
 
-    <div class="skill-detail-wrapper">
+    <div class="skill-detail-wrapper" data-aos="fade-up">
         {% for item in items %}
         <div class="skill-detail" data-skill-index="{{ loop.index }}">
             {{ item.content['#node'].field_teaser.value }}

@@ -25,6 +25,16 @@ $transition-duration: 1.5s;
                 @for $i from 1 through 10 {
                     &[data-count="#{$i}"] {
                         .skill-list-item {
+                            width: calc(100% / #{$i} - (#{$default-spacing} / 2));
+                        }
+                    }
+                }
+            }
+
+            @include above(high) {
+                @for $i from 1 through 10 {
+                    &[data-count="#{$i}"] {
+                        .skill-list-item {
                             width: calc(100% / #{$i} - #{$default-spacing});
                         }
                     }
@@ -32,87 +42,92 @@ $transition-duration: 1.5s;
             }
 
             .skill-list-item {
-                overflow: hidden;
-                position: relative;
-                text-decoration: none;
-                transition: all $transition-duration;
+                > .link-wrapper {
+                    overflow: hidden;
+                    position: relative;
+                    text-decoration: none;
+                    transition: all $transition-duration;
 
-                @include below(low) {
-                    grid-area: 1 / 1 / 2 / 2;
-                    opacity: 0;
-                    pointer-events: none;
-                    z-index: 1;
-                }
-
-                @include above(low) {
-                    &:before {
-                        background-color: transparentize($color-pompadour, $overlay-transparentize);
-                        content: '';
-                        height: 100%;
-                        opacity: 1;
-                        position: absolute;
-                        transition: all $transition-duration;
-                        width: 100%;
-                        z-index: 2;
+                    @include below(low) {
+                        grid-area: 1 / 1 / 2 / 2;
+                        opacity: 0;
+                        pointer-events: none;
+                        z-index: 1;
                     }
-                }
 
-
-                .skill-teaser {
-                    picture {
-                        display: flex;
-                        justify-content: center;
-
-                        img {
-                            max-height: 100%;
-                            max-width: 100%;
+                    @include above(low) {
+                        &:before {
+                            background-color: transparentize($theme-color, $overlay-transparentize);
+                            content: '';
+                            height: 100%;
+                            opacity: 1;
+                            position: absolute;
                             transition: all $transition-duration;
+                            width: 100%;
+                            z-index: 2;
+                        }
+                    }
+
+
+                    .skill-teaser {
+                        picture {
+                            display: flex;
+                            justify-content: center;
+
+                            img {
+                                max-height: 100%;
+                                max-width: 100%;
+                                transition: all $transition-duration;
+
+                                @include above(low) {
+                                    filter: grayscale(100%);
+                                }
+                            }
+                        }
+
+                        .skill {
+                            @include below(low) {
+                                &__title {
+                                    color: $primary-color;
+                                    font-size: 2.5rem;
+                                    font-weight: 500;
+                                    padding: 0.7em 0;
+                                    text-align: center;
+                                }
+
+                                &__teaser {
+                                    display: none;
+                                }
+                            }
 
                             @include above(low) {
-                                filter: grayscale(100%);
-                            }
-                        }
-                    }
-
-                    .skill {
-                        @include below(low) {
-                            &__title {
-                                color: $primary-color;
-                                font-size: 2.5rem;
-                                font-weight: 500;
-                                padding: 0.7em 0;                            }
-                                text-align: center;
-
-                            &__teaser {
                                 display: none;
                             }
-                        }
-
-                        @include above(low) {
-                            display: none;
                         }
                     }
                 }
 
                 &.active {
-                    @include below(low) {
-                        opacity: 1;
-                        pointer-events: auto;
-                        z-index: 2;
-                    }
-
-                    @include above(low) {
-                        box-shadow: 0 7px 12px -3px transparentize($color-pompadour, 0.5);
-
-                        &:before {
-                            opacity: 0;
+                    > .link-wrapper {
+                        @include below(low) {
+                            opacity: 1;
+                            pointer-events: auto;
+                            z-index: 2;
                         }
-                    }
 
-                    .skill-teaser {
-                        picture {
-                            img {
-                                filter: grayscale(0);
+                        @include above(low) {
+                            box-shadow: 0 7px 12px -3px transparentize($theme-color, 0.5);
+
+                            &:before {
+                                opacity: 0;
+                            }
+                        }
+
+                        .skill-teaser {
+                            picture {
+                                img {
+                                    filter: grayscale(0);
+                                }
                             }
                         }
                     }
@@ -153,7 +168,8 @@ $transition-duration: 1.5s;
 
     .skill-detail-wrapper {
         background-color: $color-white;
-        border: 1px solid $color-pompadour;
+        box-shadow: 0 15px 20px -10px transparentize($theme-color, 0.7),
+            0 5px 25px 0 transparentize($theme-color, 0.9);
         align-items: center;
         display: flex;
         flex-direction: column;

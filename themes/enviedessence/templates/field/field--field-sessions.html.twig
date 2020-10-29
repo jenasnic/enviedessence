@@ -2,7 +2,14 @@
     <h2>Consultations</h2>
     <div class="sessions">
     {% for item in items %}
-        {{ item }}
+        <div
+            class="session-wrapper"
+            data-aos="zoom-out"
+            data-aos-duration="1000"
+            data-aos-delay="{{ 300 * loop.index0 }}"
+        >
+            {{ item }}
+        </div>
     {% endfor %}
     </div>
 </div>

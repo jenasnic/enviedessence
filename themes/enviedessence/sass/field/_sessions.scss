@@ -8,6 +8,10 @@
         margin-bottom: -50px;
         width: 100%;
 
+        .session-wrapper {
+            margin: 0 10px $default-spacing 10px;
+        }
+
         @include below(low) {
             align-items: center;
             flex-direction: column;
