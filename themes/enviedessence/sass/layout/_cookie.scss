@@ -1,0 +1,54 @@
+.sliding-popup-bottom {
+    width: 100%;
+}
+
+.eu-cookie-compliance-banner {
+    background-color: transparentize($color-mine-shaft, 0.3);
+    padding: 20px 0;
+
+    .eu-cookie-compliance-content {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        .eu-cookie-compliance-message {
+            color: $color-white;
+            font-size: 1.1rem;
+            padding-right: 10px
+        }
+
+        .eu-cookie-compliance-buttons {
+            display: flex;
+
+            button {
+                border-radius: 10px;
+                color: $color-white;
+                font-size: 1.3rem;
+                font-weight: 500;
+                margin: 5px;
+                padding: 8px 16px;
+                text-align: center;
+                transition: all 0.8s;
+
+                &.agree-button {
+                    background-color: transparentize($theme-color, 0.4);
+                    border: 1px solid $theme-color;
+
+                    &:hover {
+                        background-color: $theme-color;
+                    }
+                }
+
+                &.find-more-button {
+                    background: none;
+                    border: 1px solid $color-white;
+
+                    &:hover {
+                        background-color: $color-white;
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
