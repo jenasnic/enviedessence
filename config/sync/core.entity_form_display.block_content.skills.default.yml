@@ -4,24 +4,13 @@ status: true
 dependencies:
   config:
     - block_content.type.skills
-    - field.field.block_content.skills.field_background
     - field.field.block_content.skills.field_skills
     - field.field.block_content.skills.field_title
-  module:
-    - svg_image
 id: block_content.skills.default
 targetEntityType: block_content
 bundle: skills
 mode: default
 content:
-  field_background:
-    weight: 26
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-    region: content
   field_skills:
     weight: 2
     settings:

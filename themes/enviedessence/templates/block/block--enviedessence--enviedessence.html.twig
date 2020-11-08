@@ -1,0 +1,15 @@
+{% set classes = [
+    'block-enviedessence',
+    'container',
+] %}
+
+<section{{ attributes.addClass(classes) }}>
+    {% include '@enviedessence/component/_underline-title.html.twig' with { title: content.field_title } %}
+    <div
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        class="text"
+    >
+        {{ content.field_text }}
+    </div>
+</section>

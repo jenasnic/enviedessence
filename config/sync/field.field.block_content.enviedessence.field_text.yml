@@ -1,0 +1,21 @@
+uuid: 7935065c-17f8-4681-8917-7abd5f47cc9a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.enviedessence
+    - field.storage.block_content.field_text
+  module:
+    - text
+id: block_content.enviedessence.field_text
+field_name: field_text
+entity_type: block_content
+bundle: enviedessence
+label: texte
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

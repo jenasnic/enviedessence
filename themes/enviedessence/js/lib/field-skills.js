@@ -42,12 +42,6 @@ export default class FieldSkills {
     displaySkill = (skill) => {
         const index = skill.dataset.skillIndex;
 
-        [...this.skills.querySelectorAll('.skill-title')].forEach(skillDetail => {
-            skillDetail.classList.remove('active');
-        });
-
-        this.skills.querySelector(`.skill-title[data-skill-index="${index}"]`).classList.add('active');
-
         [...this.skills.querySelectorAll('.skill-detail')].forEach(skillDetail => {
             skillDetail.classList.remove('active');
         });

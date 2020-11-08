@@ -15,7 +15,8 @@
         z-index: 1;
 
         > h1 {
-            font-size: 7.5em;
+            font-family: $font-title;
+            font-size: 15em;
 
             @include below(low) {
                 font-size: 3.5em;

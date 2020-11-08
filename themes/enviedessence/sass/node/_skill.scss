@@ -1,11 +1,6 @@
 .skill-full {
     .content {
-        font-size: 2rem;
         padding: $default-spacing 5% 0 5%;
-
-        @include below(low) {
-            font-size: 1.5rem;
-        }
 
         .icon {
             color: $theme-color;

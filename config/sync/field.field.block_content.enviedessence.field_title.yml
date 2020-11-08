@@ -1,0 +1,19 @@
+uuid: 4db82bef-c562-4344-a515-a8a3abdcc526
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.enviedessence
+    - field.storage.block_content.field_title
+id: block_content.enviedessence.field_title
+field_name: field_title
+entity_type: block_content
+bundle: enviedessence
+label: titre
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

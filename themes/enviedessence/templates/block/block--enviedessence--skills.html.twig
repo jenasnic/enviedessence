@@ -1,5 +1,5 @@
 <section{{ attributes.addClass('block-skills') }}>
-    {{ content.field_background }}
-    <h2>{{ content.field_title }}</h2>
+    {% include '@enviedessence/svg/background_03.svg' %}
+    {% include '@enviedessence/component/_underline-title.html.twig' with { title: content.field_title } %}
     {{ content.field_skills }}
 </section>

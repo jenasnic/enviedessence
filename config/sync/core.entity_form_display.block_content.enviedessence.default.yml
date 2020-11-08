@@ -1,0 +1,47 @@
+uuid: 4cf7fa6c-7ca4-492c-980a-1408c54ab629
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.enviedessence
+    - field.field.block_content.enviedessence.field_text
+    - field.field.block_content.enviedessence.field_title
+  module:
+    - text
+id: block_content.enviedessence.default
+targetEntityType: block_content
+bundle: enviedessence
+mode: default
+content:
+  field_text:
+    weight: 27
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

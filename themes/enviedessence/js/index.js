@@ -1,6 +1,8 @@
 import '../sass/style.scss';
 
+import './component/help-tool';
 import './component/menu';
+import './component/scroll-top';
 import './component/skills';
 
 import AOS from 'aos';
