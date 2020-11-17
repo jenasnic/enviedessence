@@ -1,0 +1,15 @@
+uuid: 6ce8073a-909f-4f32-b8d3-84f28934f98f
+langcode: fr
+status: true
+dependencies: {  }
+name: banner_small_tablet
+label: 'Banner small - tablet'
+effects:
+  0430f8f9-3c46-4a7d-bb29-e38468353193:
+    uuid: 0430f8f9-3c46-4a7d-bb29-e38468353193
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 750
+      height: 150
+      anchor: center-center

@@ -1,0 +1,33 @@
+uuid: 5c0c351e-4005-4d3b-ac1c-9808daa69d2c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.banner_small
+    - field.field.media.image.field_media_image
+    - media.type.image
+    - responsive_image.styles.banner_small
+  module:
+    - responsive_image
+_core:
+  default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
+id: media.image.banner_small
+targetEntityType: media
+bundle: image
+mode: banner_small
+content:
+  thumbnail:
+    type: responsive_image
+    weight: 0
+    region: content
+    label: visually_hidden
+    settings:
+      responsive_image_style: banner_small
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_media_image: true
+  langcode: true
+  name: true
+  uid: true

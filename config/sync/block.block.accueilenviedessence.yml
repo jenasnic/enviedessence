@@ -16,7 +16,7 @@ provider: null
 plugin: 'block_content:da49b584-cb69-44f8-8336-2dbf4fc232bc'
 settings:
   id: 'block_content:da49b584-cb69-44f8-8336-2dbf4fc232bc'
-  label: 'Accueil - enviedessence'
+  label: 'Accueil - Enviedessence'
   provider: block_content
   label_display: '0'
   status: true

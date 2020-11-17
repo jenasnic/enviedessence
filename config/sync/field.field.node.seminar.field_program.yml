@@ -1,0 +1,34 @@
+uuid: 4fed83d8-d25e-42c9-87d2-f9c7b7f639b4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_program
+    - node.type.seminar
+    - paragraphs.paragraphs_type.program
+  module:
+    - entity_reference_revisions
+id: node.seminar.field_program
+field_name: field_program
+entity_type: node
+bundle: seminar
+label: Programme
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      program: program
+    target_bundles_drag_drop:
+      program:
+        enabled: true
+        weight: 3
+      session:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

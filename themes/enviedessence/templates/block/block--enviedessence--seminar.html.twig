@@ -1,0 +1,19 @@
+{% set classes = [
+    'block-seminar',
+    'container',
+] %}
+
+<section{{ attributes.addClass(classes) }}>
+    {% include '@enviedessence/component/_underline-title.html.twig' with { title: content.field_title } %}
+    <div
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        class="text"
+    >
+        {{ content.field_text }}
+    </div>
+    <a href="#" class="link-banner with-overlay">
+        {{ content.field_image }}
+        <span class="more">En savoir plus</span>
+    </a>
+</section>

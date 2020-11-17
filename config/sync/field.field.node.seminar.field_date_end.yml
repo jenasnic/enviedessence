@@ -1,0 +1,21 @@
+uuid: c47b648c-82c3-4cc5-9bc9-52aea523bc3b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_end
+    - node.type.seminar
+  module:
+    - datetime
+id: node.seminar.field_date_end
+field_name: field_date_end
+entity_type: node
+bundle: seminar
+label: Fin
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

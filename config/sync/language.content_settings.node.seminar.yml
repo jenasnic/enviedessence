@@ -1,0 +1,11 @@
+uuid: 7829e718-1fb0-44ef-a0cd-eba66e9c4cd2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.seminar
+id: node.seminar
+target_entity_type_id: node
+target_bundle: seminar
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,19 @@
+uuid: c3228502-342a-43bb-9c77-2c8b0e7c6453
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_detail
+    - paragraphs.paragraphs_type.program
+id: paragraph.program.field_detail
+field_name: field_detail
+entity_type: paragraph
+bundle: program
+label: Détail
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -9,7 +9,7 @@ id: paragraph.session.field_time
 field_name: field_time
 entity_type: paragraph
 bundle: session
-label: horaire
+label: Horaire
 description: ''
 required: true
 translatable: false

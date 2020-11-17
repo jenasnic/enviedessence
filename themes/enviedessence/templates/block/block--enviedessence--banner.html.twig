@@ -1,18 +1,5 @@
-{% set classes = [
-    'block-banner',
-    'banner',
-    'with-overlay',
-    'with-background',
-] %}
-
-<section{{ attributes.addClass(classes) }}>
-    {{ content.field_image }}
-    <div class="title-wrapper">
-        <h1 data-aos="fade-up" data-aos-duration="2000">{{ content.field_title }}</h1>
-        {% if content.field_subtitle %}
-            <div data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1200" class="subtitle">
-                {{ content.field_subtitle }}
-            </div>
-        {% endif %}
-    </div>
-</section>
+{% include '@enviedessence/component/_banner-top.html.twig' with {
+    image: content.field_image,
+    title: content.field_title,
+    subtitle: content.field_subtitle,
+} only %}

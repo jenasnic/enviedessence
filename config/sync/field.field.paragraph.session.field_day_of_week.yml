@@ -11,7 +11,7 @@ id: paragraph.session.field_day_of_week
 field_name: field_day_of_week
 entity_type: paragraph
 bundle: session
-label: 'jour de la semaine'
+label: 'Jour de la semaine'
 description: ''
 required: true
 translatable: false

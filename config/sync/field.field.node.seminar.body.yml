@@ -1,0 +1,23 @@
+uuid: 316147ed-8cf2-47c2-8263-49385e950728
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.seminar
+  module:
+    - text
+id: node.seminar.body
+field_name: body
+entity_type: node
+bundle: seminar
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

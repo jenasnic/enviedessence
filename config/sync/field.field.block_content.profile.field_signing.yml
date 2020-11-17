@@ -9,7 +9,7 @@ id: block_content.profile.field_signing
 field_name: field_signing
 entity_type: block_content
 bundle: profile
-label: signature
+label: Signature
 description: ''
 required: true
 translatable: false

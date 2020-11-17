@@ -1,0 +1,21 @@
+uuid: 31bf10e3-ade7-470b-85ac-610efa37589b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.seminar
+    - field.storage.block_content.field_text
+  module:
+    - text
+id: block_content.seminar.field_text
+field_name: field_text
+entity_type: block_content
+bundle: seminar
+label: Texte
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

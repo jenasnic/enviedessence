@@ -9,7 +9,7 @@ id: node.skill.field_teaser
 field_name: field_teaser
 entity_type: node
 bundle: skill
-label: accroche
+label: Accroche
 description: ''
 required: true
 translatable: false

@@ -1,0 +1,52 @@
+.seminar {
+    .detail {
+        display: flex;
+        justify-content: space-between;
+        margin-top: $default-spacing;
+        padding: 0 5%;
+
+        .field-program {
+            flex-grow: 1;
+            padding-right: $default-spacing;
+
+            > .program-wrapper:not(:last-child) {
+                margin-bottom: 2em;
+            }
+        }
+
+        .infos {
+            border-left: 1px solid $theme-color;
+            display: flex;
+            font-size: 1.5rem;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: $default-spacing;
+
+            &__period {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                line-height: 1.6em;
+            }
+
+            &__place {
+                font-size: 1.2em;
+                line-height: 1.7em;
+                margin-top: 1.7em;
+                text-align: center;
+                white-space: nowrap;
+
+                .icon {
+                    color: $theme-color;
+                    display: block;
+                    font-size: 2.3em;
+                    margin-top: 0.3em;
+                }
+            }
+        }
+    }
+
+    .price {
+        font-size: 5rem;
+    }
+}

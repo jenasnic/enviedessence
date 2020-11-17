@@ -97,6 +97,17 @@ $transition-duration: 1.5s;
                             }
                         }
                     }
+
+                    > .icon {
+                        text-shadow: 0 0 0.5em $color-mine-shaft;
+                        color: $theme-color;
+                        bottom: 0.3em;
+                        font-size: 3rem;
+                        position: absolute;
+                        right: 10%;
+                        opacity: 0;
+                        transition: opacity 1.2s ease 0.5s;
+                    }
                 }
 
                 &.active {
@@ -115,6 +126,10 @@ $transition-duration: 1.5s;
                                     filter: grayscale(0);
                                 }
                             }
+                        }
+
+                        > .icon {
+                            opacity: 1
                         }
                     }
                 }
@@ -178,16 +193,40 @@ $transition-duration: 1.5s;
             transition: all $transition-duration;
             width: 90%;
 
-            h3 {
-                font-size: 1.5em;
-                font-weight: 500;
-                margin-bottom: 0.5em;
-                text-align: center;
-                text-transform: uppercase;
+            > a {
+                color: $primary-color;
+                display: block;
+                position: relative;
+                text-decoration: none;
+
+                h3 {
+                    font-size: 1.5em;
+                    font-weight: 500;
+                    margin-bottom: 0.5em;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+
+                > .icon {
+                    color: $theme-color;
+                    bottom: -1em;
+                    font-size: 3rem;
+                    position: absolute;
+                    right: 0;
+                    opacity: 0;
+                    transition: opacity 1.2s ease 0.5s;
+                }
             }
+
 
             &.active {
                 opacity: 1;
+
+                > a {
+                    .icon {
+                        opacity: 1;
+                    }
+                }
             }
         }
     }

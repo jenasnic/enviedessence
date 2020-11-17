@@ -1,0 +1,8 @@
+uuid: 528bd1f2-3d66-48b3-b39b-c6d06403f1c6
+langcode: fr
+status: true
+dependencies: {  }
+id: seminar
+label: Séminaire
+revision: 0
+description: ''

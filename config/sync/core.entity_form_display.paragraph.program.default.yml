@@ -1,0 +1,32 @@
+uuid: bf596041-63fd-4060-8ac1-fc33bef022e7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.program.field_detail
+    - field.field.paragraph.program.field_step
+    - paragraphs.paragraphs_type.program
+id: paragraph.program.default
+targetEntityType: paragraph
+bundle: program
+mode: default
+content:
+  field_detail:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_step:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

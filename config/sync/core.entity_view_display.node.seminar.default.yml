@@ -1,0 +1,115 @@
+uuid: 15c5d0c4-d594-4ad5-b275-0f92332ce9e6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.seminar.body
+    - field.field.node.seminar.field_date_end
+    - field.field.node.seminar.field_date_start
+    - field.field.node.seminar.field_image
+    - field.field.node.seminar.field_place
+    - field.field.node.seminar.field_place_link
+    - field.field.node.seminar.field_price
+    - field.field.node.seminar.field_price_info
+    - field.field.node.seminar.field_program
+    - field.field.node.seminar.field_subtitle
+    - node.type.seminar
+  module:
+    - datetime
+    - entity_reference_revisions
+    - link
+    - text
+    - user
+id: node.seminar.default
+targetEntityType: node
+bundle: seminar
+mode: default
+content:
+  body:
+    label: visually_hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_date_end:
+    weight: 5
+    label: visually_hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_date_start:
+    weight: 4
+    label: visually_hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_image:
+    weight: 0
+    label: visually_hidden
+    settings:
+      view_mode: banner
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_place:
+    weight: 8
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_place_link:
+    weight: 9
+    label: visually_hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_price:
+    weight: 6
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_price_info:
+    weight: 7
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_program:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_subtitle:
+    weight: 1
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true
+  links: true

@@ -1,0 +1,15 @@
+uuid: e6af1578-19cd-4b5f-b2e4-a380ea4756b3
+langcode: fr
+status: true
+dependencies: {  }
+name: banner_small_mobile
+label: 'Banner small - mobile'
+effects:
+  cc573246-7bef-4f38-b329-de8aa50b85bc:
+    uuid: cc573246-7bef-4f38-b329-de8aa50b85bc
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 96
+      anchor: center-center

@@ -9,7 +9,7 @@ id: node.skill.field_price
 field_name: field_price
 entity_type: node
 bundle: skill
-label: tarif
+label: Tarif
 description: ''
 required: true
 translatable: false
