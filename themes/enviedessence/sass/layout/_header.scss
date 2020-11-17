@@ -1,5 +1,3 @@
-$icon-height: 4.3rem;
-
 header {
     align-items: center;
     display: flex;
@@ -8,21 +6,17 @@ header {
     height: auto;
     position: absolute;
     top: 0;
-    transition: all 1.5s;
-    transform: translateY(calc(-100% + #{$icon-height}));
     width: 100%;
-    z-index: 2;
-
-    @include below(low) {
-        transform: translateY(-100vh);
-    }
+    z-index: 5;
 
     > nav {
-        background-color: transparentize($color-mine-shaft, 0.5);
+        background-color: transparentize($color-white, 0.35);
         width: 100%;
 
         @include below(low) {
-            background-color: transparentize($color-mine-shaft, 0.1);
+            background-color: transparentize($color-white, 0.1);
+            transition: all 1.5s;
+            transform: translateY(-100vh);
         }
 
         ul {
@@ -31,11 +25,10 @@ header {
             flex-direction: row;
             justify-content: center;
             list-style: none;
-            padding: 3rem 0;
+            padding: 2.5rem 0;
             margin: 0;
 
             @include below(low) {
-                align-items: flex-start;
                 flex-direction: column;
                 height: 100vh;
                 padding: 20px;
@@ -53,13 +46,14 @@ header {
                 }
 
                 @include below(low) {
-                    font-size: 2rem;
-                    margin: 13px 15px;
+                    font-size: 2.5rem;
                     font-weight: 700;
+                    margin: 13px 15px;
                 }
 
-                &:before, &:after {
-                    background-color: $color-white;
+                &:after {
+                    background-color: $theme-color;
+                    bottom: -0.5em;
                     content: '';
                     height: 2px;
                     left: 50%;
@@ -69,26 +63,14 @@ header {
                     width: 0;
                 }
 
-                &:before {
-                    top: -0.5em;
-
-                    @include below(low) {
-                        display: none;
-                    }
-                }
-
-                &:after {
-                    bottom: -0.5em;
-                }
-
                 a {
-                    color: $color-white;
+                    color: $primary-color;
                     font-size: 1em;
                     text-decoration: none;
                 }
 
                 &:hover {
-                    &:before, &:after {
+                    &:after {
                         width: 50%;
 
                         @include below(low) {
@@ -101,28 +83,30 @@ header {
     }
 
     .icon-arrow {
-        color: $color-white;
-        cursor: pointer;
-        font-size: 4.3rem;
-        height: $icon-height;
-        transform: rotateX(180deg);
-        transition: all 1.2s 0.5s;
+        display: none;
 
         @include below(low) {
+            color: $color-white;
+            cursor: pointer;
+            display: block;
             position: absolute;
+            font-size: 4.3rem;
+            transform: rotateX(180deg);
+            transition: all 1.2s 0.5s;
             right: 20px;
-            bottom: -5rem;
+            top: 20px;
         }
     }
 
-    &.active {
-        transform: translateY(0);
+    @include below(low) {
+        &.active {
+            > nav {
+                transform: translateY(0);
+            }
 
-        .icon-arrow {
-            transform: rotateX(0);
-
-            @include below(low) {
-                bottom: 4rem;
+            .icon-arrow {
+                color: $primary-color;
+                transform: rotateX(0);
             }
         }
     }

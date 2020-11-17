@@ -1,0 +1,25 @@
+uuid: 36967ee2-ed58-45cd-ad21-55006b38015c
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:enviedessence:da49b584-cb69-44f8-8336-2dbf4fc232bc'
+  module:
+    - block_content
+  theme:
+    - enviedessence
+id: accueilenviedessence
+theme: enviedessence
+region: homepage
+weight: -2
+provider: null
+plugin: 'block_content:da49b584-cb69-44f8-8336-2dbf4fc232bc'
+settings:
+  id: 'block_content:da49b584-cb69-44f8-8336-2dbf4fc232bc'
+  label: 'Accueil - enviedessence'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

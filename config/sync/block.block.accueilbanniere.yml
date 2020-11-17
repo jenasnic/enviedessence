@@ -11,7 +11,7 @@ dependencies:
 id: accueilbanniere
 theme: enviedessence
 region: homepage
-weight: -2
+weight: -3
 provider: null
 plugin: 'block_content:528ae719-7f07-4762-b510-649c3c0ff8f2'
 settings:

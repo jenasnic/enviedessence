@@ -1,0 +1,11 @@
+uuid: 7bc7df48-2edd-42bd-9ffe-6fded3a55e2a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.enviedessence
+id: block_content.enviedessence
+target_entity_type_id: block_content
+target_bundle: enviedessence
+default_langcode: site_default
+language_alterable: false

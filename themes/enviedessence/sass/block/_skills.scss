@@ -12,16 +12,20 @@
         text-shadow: 0 0 0.5em $color-white;
     }
 
-    & > img {
+    & > svg {
         height: 100%;
         left: 0;
         object-fit: fill;
         object-position: center;
-        opacity: 0.1;
+        opacity: 0.15;
         position: absolute;
         top: 0;
         width: 100%;
         z-index: 0;
+
+        > g {
+            fill: $theme-color;
+        }
 
         @include below(low) {
             display: none;

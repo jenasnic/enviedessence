@@ -1,5 +1,10 @@
-<section{{ attributes.addClass('block-profile') }}>
-    <h2>{{ content.field_title }}</h2>
+{% set classes = [
+    'block-profile',
+    'container',
+] %}
+
+<section{{ attributes.addClass(classes) }}>
+    {% include '@enviedessence/component/_underline-title.html.twig' with { title: content.field_title, other: true } %}
     <div class="profile">
         <div
             data-aos="fade-right"

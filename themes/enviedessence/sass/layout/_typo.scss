@@ -1,26 +1,14 @@
-h2 {
-    font-size: 3.5rem;
-    position: relative;
-    margin: calc(#{$default-spacing} / 2) 0 $default-spacing 0;
-    padding: 0.5em;
-    text-align: center;
-    text-transform: uppercase;
-    width: 100%;
+.text {
+    font-size: 2rem;
+    line-height: 1.5em;
+    text-align: justify;
 
-    @include below(low) {
-        font-size: 2.4rem;
+    @include below(high) {
+        font-size: 1.6rem;
     }
 
-    &:after {
-        background-color: $theme-color;
-        bottom: 0;
-        color: $primary-color;
-        content: '';
-        height: 1px;
-        left: 50%;
-        position: absolute;
-        transform: translateX(-50px);
-        width: 100px;
+    @include below(low) {
+        font-size: 1.5rem;
     }
 }
 

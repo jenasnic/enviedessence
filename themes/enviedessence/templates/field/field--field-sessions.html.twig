@@ -1,5 +1,5 @@
 <div{{ attributes.addClass('field-sessions') }}>
-    <h2>Consultations</h2>
+    {% include '@enviedessence/component/_underline-title.html.twig' with { title: 'Consultations' } %}
     <div class="sessions">
     {% for item in items %}
         <div
