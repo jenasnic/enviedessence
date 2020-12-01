@@ -10,11 +10,14 @@
 
 @import 'component/banner';
 @import 'component/help-tool';
+@import 'component/link-banner';
+@import 'component/price';
 @import 'component/scroll-top';
 @import 'component/underline-title';
 @import 'component/with-background';
 @import 'component/with-overlay';
 
+@import 'field/body';
 @import 'field/sessions';
 @import 'field/skills';
 
@@ -28,5 +31,7 @@
 
 @import 'node/contact';
 @import 'node/skill';
+@import 'node/seminar';
 
+@import 'paragraph/program';
 @import 'paragraph/session';

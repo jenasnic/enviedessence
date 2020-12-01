@@ -1,0 +1,19 @@
+uuid: 5a724271-807d-451c-a7f7-e3292456586d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.seminar
+    - field.storage.block_content.field_title
+id: block_content.seminar.field_title
+field_name: field_title
+entity_type: block_content
+bundle: seminar
+label: Titre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

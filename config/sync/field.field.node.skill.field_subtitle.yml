@@ -9,7 +9,7 @@ id: node.skill.field_subtitle
 field_name: field_subtitle
 entity_type: node
 bundle: skill
-label: sous-titre
+label: Sous-titre
 description: ''
 required: false
 translatable: false

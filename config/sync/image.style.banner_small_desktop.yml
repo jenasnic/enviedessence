@@ -1,0 +1,15 @@
+uuid: aaa46338-57e6-4c70-91fd-705980794624
+langcode: fr
+status: true
+dependencies: {  }
+name: banner_small_desktop
+label: 'Banner small - desktop'
+effects:
+  11e5d97c-6c06-4410-8ae8-a4dc3bf576fb:
+    uuid: 11e5d97c-6c06-4410-8ae8-a4dc3bf576fb
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 240
+      anchor: center-center

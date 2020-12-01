@@ -15,6 +15,7 @@
                     class="link-wrapper"
                 >
                     {{ item }}
+                    <span class="icon icon-arrow-right"></span>
                 </a>
             </div>
             {% endfor %}
@@ -25,8 +26,11 @@
         <div class="skill-border"></div>
         {% for item in items %}
         <div class="skill-detail text" data-skill-index="{{ loop.index }}">
-            <h3>{{ item.content['#node'].getTitle() }}</h3>
-            {{ item.content['#node'].field_teaser.value }}
+            <a href="{{ path('entity.node.canonical', {'node': item.content['#node'].id()}) }}">
+                <h3>{{ item.content['#node'].getTitle() }}</h3>
+                {{ item.content['#node'].field_teaser.value }}
+                <span class="icon">...</span>
+            </a>
         </div>
         {% endfor %}
     </div>

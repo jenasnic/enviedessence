@@ -1,0 +1,11 @@
+uuid: 41dead58-b19e-4efc-a585-dcc913bbc488
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.seminar
+id: block_content.seminar
+target_entity_type_id: block_content
+target_bundle: seminar
+default_langcode: site_default
+language_alterable: false

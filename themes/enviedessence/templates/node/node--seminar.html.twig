@@ -1,0 +1,39 @@
+<article{{ attributes.addClass('seminar') }}>
+
+    {% include '@enviedessence/component/_banner-top.html.twig' with {
+        image: content.field_image,
+        title: node.getTitle(),
+        subtitle: content.field_subtitle,
+    } only %}
+
+    {{ content.body }}
+
+    <section class="detail">
+
+        {{ content.field_program }}
+
+        <div class="infos">
+            <div class="infos__period">
+                <span>Du</span>
+                <strong>{{ content.field_date_start.0['#attributes']['datetime']|date('m/d/Y') }}</strong>
+                <span>au</span>
+                <strong>{{ content.field_date_end.0['#attributes']['datetime']|date('m/d/Y') }}</strong>
+            </div>
+            <div class="infos__place">
+                {{ content.field_place }}
+                {% if content.field_place_link %}
+                    <a href="{{ content.field_place_link.0['#url'] }}" target="_blank">
+                        <span class="icon icon-place"></span>
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+
+    </section>
+
+    {% include '@enviedessence/component/_price.html.twig' with {
+        price: content.field_price,
+        priceInfo: content.field_price_info,
+    } only %}
+
+</article>

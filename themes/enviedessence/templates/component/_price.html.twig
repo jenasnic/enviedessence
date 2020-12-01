@@ -1,0 +1,14 @@
+<div class="price"
+    data-aos="fade-up"
+    data-aos-duration="1000"
+>
+    <div class="price__value">
+        {{ price }}
+        <span class="icon icon-euro"></span>
+    </div>
+    {% if priceInfo %}
+    <div class="price__info">
+        {{ priceInfo }}
+    </div>
+    {% endif %}
+</div>

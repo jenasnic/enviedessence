@@ -1,0 +1,21 @@
+uuid: 96746a3b-03df-4fa2-a750-66780258dbf1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_start
+    - node.type.seminar
+  module:
+    - datetime
+id: node.seminar.field_date_start
+field_name: field_date_start
+entity_type: node
+bundle: seminar
+label: Début
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

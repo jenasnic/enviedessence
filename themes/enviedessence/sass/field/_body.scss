@@ -1,0 +1,14 @@
+.body-content {
+    padding: $default-spacing 5% 0 5%;
+
+    .icon {
+        color: $theme-color;
+        float: left;
+        font-size: 5em;
+        padding-right: 0.5em;
+
+        @include below(low) {
+            font-size: 3.5em;
+        }
+    }
+}

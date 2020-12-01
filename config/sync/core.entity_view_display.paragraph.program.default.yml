@@ -1,0 +1,29 @@
+uuid: bc9a5523-4c95-481c-bd09-ae240aa254ea
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.program.field_detail
+    - field.field.paragraph.program.field_step
+    - paragraphs.paragraphs_type.program
+id: paragraph.program.default
+targetEntityType: paragraph
+bundle: program
+mode: default
+content:
+  field_detail:
+    weight: 1
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_step:
+    weight: 0
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

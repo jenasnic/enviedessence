@@ -1,0 +1,18 @@
+uuid: 37b4a837-ce6b-45ef-b5e3-02abe3766ffe
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Séminaire
+type: seminar
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,69 @@
+.link-banner {
+    display: block;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    & > picture {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+
+        > img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &:before {
+        transition: all 0.8s;
+    }
+
+    > .more {
+        bottom: -100%;
+        color: $theme-color;
+        font-size: 1.7rem;
+        font-weight: 500;
+        opacity: 0;
+        padding: 0.5em 1em;
+        position: absolute;
+        text-transform: uppercase;
+        transition: all 0.8s;
+        right: 0;
+        z-index: 3;
+    }
+
+    &:after {
+        position: absolute;
+        content: '';
+        background: linear-gradient(0, $color-white, $color-white 20%, transparentize($color-white, 1) 50%);
+        bottom: 0;
+        right: -50%;
+        height: 50rem;
+        width: 100%;
+        transform: rotate(-16deg) translate(0rem, 16rem);
+        transition: all 0.8s;
+        z-index: 2;
+    }
+
+    &:hover {
+        &:before {
+            opacity: 0;
+        }
+
+        > .more {
+            bottom: 0;
+            opacity: 1;
+        }
+
+        &:after {
+            right: 0;
+        }
+    }
+}

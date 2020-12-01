@@ -1,0 +1,10 @@
+uuid: 8984fa91-c0f5-4e0c-973a-f6b892bf5291
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.banner_small
+label: 'Banner small'
+targetEntityType: media
+cache: true

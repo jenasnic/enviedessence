@@ -1,0 +1,60 @@
+uuid: d1f0d33b-0790-4ad6-a0b0-22e1403fa59e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.seminar
+    - field.field.block_content.seminar.field_image
+    - field.field.block_content.seminar.field_link
+    - field.field.block_content.seminar.field_text
+    - field.field.block_content.seminar.field_title
+  module:
+    - link
+    - media_library
+    - text
+id: block_content.seminar.default
+targetEntityType: block_content
+bundle: seminar
+mode: default
+content:
+  field_image:
+    weight: 3
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_link:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_text:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

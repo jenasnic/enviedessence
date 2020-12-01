@@ -1,0 +1,19 @@
+uuid: 0ba6a1a0-9afa-498a-8c70-ce83c83be4f6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_step
+    - paragraphs.paragraphs_type.program
+id: paragraph.program.field_step
+field_name: field_step
+entity_type: paragraph
+bundle: program
+label: Etape
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

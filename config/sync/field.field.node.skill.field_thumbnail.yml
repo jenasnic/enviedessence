@@ -10,7 +10,7 @@ id: node.skill.field_thumbnail
 field_name: field_thumbnail
 entity_type: node
 bundle: skill
-label: vignette
+label: Vignette
 description: ''
 required: true
 translatable: false

@@ -1,38 +1,19 @@
 <article{{ attributes.addClass('skill-full') }}>
 
-    <section class="banner with-overlay with-background">
-        {{ content.field_image }}
-        <div class="title-wrapper">
-            <h1 data-aos="fade-up" data-aos-duration="2000">{{ node.getTitle() }}</h1>
-            {% if content.field_subtitle %}
-                <div data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1200" class="subtitle">
-                    {{ content.field_subtitle }}
-                </div>
-            {% endif %}
-        </div>
-    </section>
+    {% include '@enviedessence/component/_banner-top.html.twig' with {
+        image: content.field_image,
+        title: node.getTitle(),
+        subtitle: content.field_subtitle,
+    } only %}
 
-    <section class="content text">
-        <span class="icon icon-quote"></span>
-        {{ content.body }}
-    </section>
+    {{ content.body }}
 
     <section class="infos">
         {{ content.field_sessions }}
-        <div class="price"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-        >
-            <div class="price__value">
-                {{ content.field_price }}
-                <span class="icon icon-euro"></span>
-            </div>
-            {% if content.field_price_info %}
-            <div class="price__info">
-                {{ content.field_price_info }}
-            </div>
-            {% endif %}
-        </div>
+        {% include '@enviedessence/component/_price.html.twig' with {
+            price: content.field_price,
+            priceInfo: content.field_price_info,
+        } only %}
     </section>
 
 </article>

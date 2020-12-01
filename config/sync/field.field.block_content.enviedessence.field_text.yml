@@ -11,7 +11,7 @@ id: block_content.enviedessence.field_text
 field_name: field_text
 entity_type: block_content
 bundle: enviedessence
-label: texte
+label: Texte
 description: ''
 required: false
 translatable: true

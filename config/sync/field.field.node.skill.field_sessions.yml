@@ -12,7 +12,7 @@ id: node.skill.field_sessions
 field_name: field_sessions
 entity_type: node
 bundle: skill
-label: séances
+label: Séances
 description: ''
 required: true
 translatable: false
@@ -25,6 +25,9 @@ settings:
     target_bundles:
       session: session
     target_bundles_drag_drop:
+      program:
+        weight: 3
+        enabled: false
       session:
         enabled: true
         weight: 2
