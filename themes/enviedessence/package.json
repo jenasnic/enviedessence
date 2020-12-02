@@ -27,6 +27,7 @@
     },
     "dependencies": {
         "aos": "^2.3.4",
+        "circletype": "^2.3.0",
         "vanilla-picker": "^2.10.1"
     }
 }

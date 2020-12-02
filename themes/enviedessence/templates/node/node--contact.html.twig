@@ -12,7 +12,7 @@
         data-aos-duration="1500"
         class="contact-info"
     >
-        <h1>{{ node.getTitle() }}</h1>
+        {% include '@enviedessence/component/_underline-title.html.twig' with { title: node.getTitle() } %}
         <div class="phone">
             <a href="tel:{{ content.field_phone.0['#context'].value|replace({' ':'', '.': ''}) }}">
                 <span class="icon icon-phone"></span>

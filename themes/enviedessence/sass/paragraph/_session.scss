@@ -10,10 +10,6 @@
     padding: 20px 30px;
     min-width: 20%;
 
-    @include below(low) {
-        width: 90%;
-    }
-
     &__day {
         font-size: 3em;
         font-weight: 700;

@@ -14,17 +14,28 @@
         border: 1px solid $color-white;
         color: $color-white;
         font-size: 2rem;
-        padding: 5%;
+        padding: $default-spacing;
         z-index: 1;
 
         @include below(low) {
             font-size: 1.6rem;
         }
 
-        > h1 {
-            font-size: 2em;
-            margin-bottom: 1em;
-            text-align: center;
+        .underline-title {
+            margin: 0 0 3em 0;
+
+            h2 {
+                line-height: 0.8em;
+            }
+
+            svg {
+                max-width: 300px;
+                height: 1.2em;
+
+                > g {
+                    fill: $color-white;
+                }
+            }
         }
 
         > div {
