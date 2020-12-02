@@ -27,14 +27,13 @@ const initColorPicker = () => {
 };
 
 const initFontSelector = () => {
-    [...document.querySelectorAll('.font-selector-item')].forEach((item) => {
-        item.addEventListener('click', () => {
-            const font = item.dataset.font;
-            saveFont(font);
-            document.documentElement.style.setProperty('--font-title', font);
-        });
+    document.getElementById('font-selector').addEventListener('change', (event) => {
+        const font = event.target.value;
+        saveFont(font);
+        document.documentElement.style.setProperty('--font-title', font);
     });
 
+    document.getElementById('font-selector').value = getFont();
     document.documentElement.style.setProperty('--font-title', getFont());
 };
 

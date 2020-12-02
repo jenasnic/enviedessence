@@ -26,30 +26,40 @@
     }
 
     > .more {
-        bottom: -100%;
+        bottom: 0;
         color: $theme-color;
         font-size: 1.7rem;
         font-weight: 500;
-        opacity: 0;
         padding: 0.5em 1em;
         position: absolute;
         text-transform: uppercase;
         transition: all 0.8s;
         right: 0;
         z-index: 3;
+
+        @include above(low) {
+            bottom: -100%;
+            opacity: 0;
+        }
     }
 
     &:after {
-        position: absolute;
-        content: '';
         background: linear-gradient(0, $color-white, $color-white 20%, transparentize($color-white, 1) 50%);
         bottom: 0;
+        content: '';
         right: -50%;
-        height: 50rem;
-        width: 100%;
-        transform: rotate(-16deg) translate(0rem, 16rem);
+        height: 30rem;
+        position: absolute;
+        transform: rotate(-16deg) translate(0rem, 5rem);
         transition: all 0.8s;
+        width: 110%;
         z-index: 2;
+
+        @include below(low) {
+            right: 0;
+            width: 120%;
+            transform: rotate(-10deg) translate(0rem, 3rem);
+        }
     }
 
     &:hover {
@@ -62,8 +72,12 @@
             opacity: 1;
         }
 
-        &:after {
-            right: 0;
+        @include above(low) {
+            &:after {
+                height: 50rem;
+                right: 0;
+                transform: rotate(-16deg) translate(0rem, 16rem);
+            }
         }
     }
 }

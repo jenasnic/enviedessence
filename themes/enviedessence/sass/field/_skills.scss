@@ -38,6 +38,22 @@ $transition-duration: 1.5s;
             }
 
             .skill-list-item {
+                @include below(low) {
+                    position: relative;
+                    margin-bottom: 3rem;
+
+                    &:not(:last-child):after {
+                        background-color: $theme-color;
+                        bottom: 0;
+                        content: '';
+                        height: 1px;
+                        left: 50%;
+                        position: absolute;
+                        transform: translateX(-50%);
+                        width: 50%
+                    }
+                }
+
                 > .link-wrapper {
                     display: block;
                     overflow: hidden;
@@ -60,7 +76,6 @@ $transition-duration: 1.5s;
                         }
                     }
 
-
                     .skill-teaser {
                         picture {
                             display: flex;
@@ -81,7 +96,7 @@ $transition-duration: 1.5s;
                             @include below(low) {
                                 &__title {
                                     color: $primary-color;
-                                    font-size: 2.5rem;
+                                    font-size: 2.2rem;
                                     font-weight: 500;
                                     padding: 0.7em 0;
                                     text-align: center;
@@ -107,6 +122,10 @@ $transition-duration: 1.5s;
                         right: 10%;
                         opacity: 0;
                         transition: opacity 1.2s ease 0.5s;
+
+                        @include below(low) {
+                            display: none;
+                        }
                     }
                 }
 

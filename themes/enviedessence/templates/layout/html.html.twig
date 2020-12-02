@@ -40,9 +40,7 @@
     <js-placeholder token="{{ placeholder_token }}">
   </head>
   <body{{ attributes.addClass(body_classes) }}>
-    {% if logged_in %}
-        {% include '@enviedessence/component/_help-tool.html.twig' %}
-    {% endif %}
+    {% include '@enviedessence/component/_help-tool.html.twig' %}
     <div id="scroll-top" class="icon icon-up"></div>
     {#
       Keyboard navigation/accessibility link to main content section in
