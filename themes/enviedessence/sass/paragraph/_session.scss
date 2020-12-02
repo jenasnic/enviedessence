@@ -15,12 +15,15 @@
     }
 
     &__day {
-        font-size: 4em;
+        font-size: 3em;
         font-weight: 700;
+        margin-bottom: 0.4em;
+        padding: 0 0.8em;
     }
 
     &__time {
         font-size: 1.8em;
+        white-space: nowrap;
     }
 
     &__place {
@@ -31,6 +34,6 @@
     &__comment {
         font-size: 1em;
         font-style: italic;
-        padding-top: 0.3em;
+        padding-top: 1em;
     }
 }

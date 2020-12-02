@@ -1,9 +1,9 @@
 #help-tool {
     background-color: transparentize($color-mine-shaft, 0.5);
     border: 1px solid $color-mine-shaft;
+    bottom: 10%;
     left: 5%;
     position: fixed;
-    top: 50%;
     z-index: 99;
 
     #color-picker {
@@ -34,19 +34,6 @@
     }
 
     #font-selector {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        padding: 7px;
-
-        > .font-selector-item {
-            background-color: $color-white;
-            border-radius: 5px;
-            color: $color-mine-shaft;
-            cursor: pointer;
-            font-size: 1.4rem;
-            margin: 0 5px;
-            padding: 3px 5px;
-        }
+        margin: 7px;
     }
 }

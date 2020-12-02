@@ -1,10 +1,10 @@
 .price {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     padding: $default-spacing 5%;
     text-align: center;
 
     &__value {
-        font-size: 1em;
+        font-size: 1.6em;
 
         .icon {
             color: $theme-color;
@@ -13,7 +13,7 @@
     }
 
     &__info {
-        font-size: 0.6em;
+        font-size: 1em;
         font-style: italic;
         padding-top: 0.5em;
     }
