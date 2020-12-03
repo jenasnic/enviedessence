@@ -1,0 +1,85 @@
+$padding-off: 1em;
+$padding-on: 3em;
+
+#contact-shortcut {
+    bottom: 20%;
+    color: $color-white;
+    cursor: pointer;
+    font-size: 1rem;
+    position: fixed;
+    right: -50%;
+    text-decoration: none;
+    transition: all 1.8s 0.2s;
+    z-index: 5;
+
+    @include below(low) {
+        bottom: 18%;
+    }
+
+    &:before {
+        background-color: transparentize($color-mine-shaft, 0.5);
+        border: 1px solid $color-mine-shaft;
+        border-radius: 100%;
+        content: '';
+        height: 100%;
+        left: -$padding-off;
+        padding: $padding-off;
+        position: absolute;
+        top: -$padding-off;
+        transition: all 0.8s;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .icon {
+        font-size: 3em;
+        line-height: 0.7em;
+        transform: translateX(1px);
+        z-index: 1;
+    }
+
+    .text-top, .text-bottom {
+        position: absolute;
+    }
+
+    .text-top {
+        font-size: 1.2em;
+    }
+
+    .text-bottom {
+        font-size: 1.1em;
+    }
+
+    &.initialized {
+        right: 5%;
+
+        @include below(low) {
+            right: 10%;
+        }
+
+        .text-top, .text-bottom {
+            transition: all 0.8s;
+            transform: scale(0);
+        }
+        .text-top {
+            top: calc(#{$padding-off} - #{$padding-on});
+            left: calc(#{$padding-off} - #{$padding-on});
+        }
+        .text-bottom {
+            bottom: calc(#{$padding-off} - #{$padding-on});
+            left: calc(#{$padding-off} - #{$padding-on});
+        }
+    }
+
+    &:hover {
+        &:before {
+            left: -$padding-on;
+            padding: $padding-on;
+            top: -$padding-on;
+        }
+
+        .text-top, .text-bottom {
+            transform: scale(1);
+        }
+    }
+}

@@ -11,10 +11,22 @@
         display: flex;
         justify-content: space-between;
 
+        @include below(low) {
+            flex-direction: column;
+        }
+
         .eu-cookie-compliance-message {
             color: $color-white;
             font-size: 1.1rem;
-            padding-right: 10px
+
+            @include above(low) {
+                justify-content: center;
+                padding-right: 10px;
+            }
+
+            @include below(low) {
+                padding-bottom: 10px
+            }
         }
 
         .eu-cookie-compliance-buttons {

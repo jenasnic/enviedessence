@@ -1,7 +1,7 @@
 import Picker from 'vanilla-picker';
 
 const defaultColor = '#dbc07c66'; // rgba(219, 192, 7, 0.4);
-const defaultFont = "'Ruthie', cursive;";
+const defaultFont = "'Tangerine', cursive;";
 
 const initHelpTool = () => {
     initColorPicker();
@@ -12,7 +12,7 @@ const initColorPicker = () => {
     const options = {
         parent: document.getElementById('color-picker-paint'),
         alpha: true,
-        popup: true,
+        popup: 'top',
         onChange: changeColor,
         onDone: changeColor,
     };
