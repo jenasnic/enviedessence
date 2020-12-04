@@ -12,7 +12,7 @@
         display: flex;
         flex-direction: row;
         margin: 0 auto;
-        max-width: 1400px;
+        width: 100%;
 
         @include below(low) {
             flex-direction: column;
@@ -55,7 +55,7 @@
                 padding: 0.5em;
                 text-align: right;
 
-                @include below(high) {
+                @include below(medium) {
                     font-size: 1.5rem;
                 }
 

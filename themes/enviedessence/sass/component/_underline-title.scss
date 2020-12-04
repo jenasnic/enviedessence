@@ -19,12 +19,13 @@
 
     svg {
         margin-top: 0.5em;
-        max-width: 800px;
+        max-width: 700px;
         position: relative;
         height: 1.5em;
 
         @include below(low) {
             font-size: 0.6rem;
+            max-width: 80%;
         }
 
         > g {

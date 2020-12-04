@@ -1,4 +1,8 @@
 .seminar {
+    .first-section {
+        margin-top: calc(2 * #{$default-spacing});
+    }
+
     .detail {
         display: flex;
         justify-content: space-between;
