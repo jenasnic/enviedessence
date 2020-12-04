@@ -1,5 +1,14 @@
 .skill-full {
+    .first-section {
+        margin-top: calc(2 * #{$default-spacing});
+    }
+
     .infos {
+        max-width: $override-width;
         padding: calc(#{$default-spacing} / 2) 5% 0 5%;
+
+        @include below(high) {
+            max-width: 100%
+        }
     }
 }

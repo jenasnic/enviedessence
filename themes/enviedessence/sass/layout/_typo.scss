@@ -3,7 +3,7 @@
     line-height: 1.5em;
     text-align: justify;
 
-    @include below(high) {
+    @include below(medium) {
         font-size: 1.6rem;
     }
 

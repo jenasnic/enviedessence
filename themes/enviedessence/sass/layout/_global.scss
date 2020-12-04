@@ -28,4 +28,12 @@ html {
     margin: 0 auto;
     max-width: 1200px;
     padding: 0 5%;
+
+    @include below(medium) {
+        max-width: 90%;
+    }
+}
+
+.first-section {
+    margin-top: $default-spacing;
 }

@@ -34,10 +34,12 @@ $box-shadow-color: $color-mine-shaft;
 
 $breakpoints: (
   low: 768px,
-  high: 1200px
+  medium: 1200px,
+  high: 1700px,
 );
 
 // Misc
 
 $default-spacing: 50px;
 $overlay-transparency: var(--overlay-transparency);
+$override-width: 1600px;

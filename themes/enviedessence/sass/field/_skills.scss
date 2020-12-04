@@ -27,7 +27,7 @@ $transition-duration: 1.5s;
                 }
             }
 
-            @include above(high) {
+            @include above(medium) {
                 @for $i from 1 through 10 {
                     &[data-count="#{$i}"] {
                         .skill-list-item {

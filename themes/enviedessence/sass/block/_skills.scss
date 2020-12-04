@@ -1,9 +1,13 @@
 .block-skills {
     margin: 0 auto;
-    max-width: 1600px;
+    max-width: $override-width;
     padding: 0 5% $default-spacing 5%;
     position: relative;
     width: 100%;
+
+    @include below(high) {
+        max-width: 100%
+    }
 
     @include below(low) {
         margin-bottom: 0;

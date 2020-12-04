@@ -41,7 +41,7 @@ header {
                 position: relative;
                 text-align: center;
 
-                @include below(high) {
+                @include below(medium) {
                     font-size: 1.4rem;
                 }
 
