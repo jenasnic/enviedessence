@@ -12,7 +12,7 @@
         {{ content.body }}
     </section>
 
-    <section class="infos">
+    <section class="infos container">
         {{ content.field_sessions }}
         {% include '@enviedessence/component/_price.html.twig' with {
             price: content.field_price,
