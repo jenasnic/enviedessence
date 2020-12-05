@@ -14,13 +14,13 @@
         border: 1px solid $color-white;
         color: $color-white;
         font-size: 2rem;
-        padding: $default-spacing;
+        padding: $default-spacing calc(#{$default-spacing} * 2);
         z-index: 1;
 
         @include below(low) {
             font-size: 1.4rem;
             padding: calc(#{$default-spacing} / 2);
-            width: 90%;
+            width: 300px;
         }
 
         .underline-title {
@@ -31,6 +31,12 @@
             }
 
             svg {
+                max-width: 250px;
+
+                @include below(low) {
+                    max-width: 80%;
+                }
+
                 > g {
                     fill: $color-white;
                 }

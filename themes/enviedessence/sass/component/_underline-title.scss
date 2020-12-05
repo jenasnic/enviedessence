@@ -8,12 +8,12 @@
     max-width: 100%;
 
     h2 {
-        font-size: 8em;
+        font-size: 6em;
         text-align: center;
         width: 100%;
 
         @include below(low) {
-            font-size: 5rem;
+            font-size: 4.5em;
         }
     }
 
