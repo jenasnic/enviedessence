@@ -1,20 +1,8 @@
 // Fonts
 
-@import url('https://fonts.googleapis.com/css2?family=Ruthie&display=swap');    //'Ruthie', cursive;
 @import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');  //'Bilbo Swash Caps', cursive;
-@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');    //'Calligraffitti', cursive;
-@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');  //'Arizonia', cursive;
-@import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');   //'Qwigley', cursive;
 
-@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');  //'MuseoModerno', cursive;
-@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');     //'Tangerine', cursive;
-@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');   //'Mrs Saint Delafield', cursive;
-@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');  //'Monsieur La Doulaise', cursive;
-@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');  //'Rouge Script', cursive;
-@import url('https://fonts.googleapis.com/css2?family=Srisakdi&display=swap');  //'Srisakdi', cursive;
-
-$font-ruthie: 'Ruthie', cursive;
-$font-tangerine: 'Tangerine', cursive;
+$font-bilbo: 'Bilbo Swash Caps', cursive;
 
 $font-title: var(--font-title);
 $font-text: 'Montserrat', sans-serif;
@@ -22,8 +10,7 @@ $font-text: 'Montserrat', sans-serif;
 // Colors
 
 $color-mine-shaft: #333333;
-$color-pompadour: #74005c;
-$color-harvest-gold: #dbc07c;
+$color-armadillo: #4f493c;
 $color-white: #ffffff;
 
 $primary-color: var(--primary-color);

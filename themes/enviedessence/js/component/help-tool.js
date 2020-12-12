@@ -1,7 +1,7 @@
 import Picker from 'vanilla-picker';
 
-const defaultColor = '#dbc07c66'; // rgba(219, 192, 7, 0.4);
-const defaultFont = "'Tangerine', cursive;";
+const defaultColor = '#4f493c66'; // rgba(219, 192, 7, 0.4);
+const defaultFont = "'Bilbo Swash Caps', cursive";
 
 const initHelpTool = () => {
     initColorPicker();
