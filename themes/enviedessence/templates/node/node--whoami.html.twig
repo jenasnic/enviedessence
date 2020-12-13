@@ -1,0 +1,20 @@
+<article{{ attributes.addClass('whoami') }}>
+
+    {% include '@enviedessence/component/_banner-top.html.twig' with {
+        image: content.field_image,
+        title: node.getTitle(),
+        subtitle: content.field_subtitle,
+    } only %}
+
+    <section class="first-section container">
+        {{ content.body }}
+        <div class="signing">
+            {{ content.field_signing }}
+        </div>
+    </section>
+
+    <section class="container">
+        {{ content.field_trainings }}
+    </section>
+
+</article>

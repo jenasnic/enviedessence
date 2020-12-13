@@ -1,0 +1,39 @@
+.picture-button {
+    align-items: stretch;
+    box-shadow: 0 10px 15px -5px transparentize($box-shadow-color, 0.7),
+        0 0 15px 0 transparentize($box-shadow-color, 0.9);
+    display: inline-flex;
+    font-size: 2rem;
+    margin: $default-spacing auto;
+    transition: all 0.8s;
+
+    &__image {
+        > img {
+            height: 4em;
+            vertical-align: middle;
+            width: auto;
+        }
+    }
+
+    &__text {
+        align-items: center;
+        color: $theme-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-transform: uppercase;
+        padding: 1em 2em;
+        white-space: nowrap;
+
+        @include below(low) {
+            font-size: 0.8em;
+            padding: 1em;
+        }
+    }
+
+    &:hover {
+        box-shadow: 0 5px 5px -5px transparentize($box-shadow-color, 0.7),
+            0 0 10px 0 transparentize($box-shadow-color, 0.9);
+        transform: scale(1.15);
+    }
+}

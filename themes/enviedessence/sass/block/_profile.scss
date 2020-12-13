@@ -48,20 +48,9 @@
                 padding-top: 20px;
             }
 
-            .signing {
-                font-size: 2rem;
-                font-style: italic;
-                font-weight: 600;
+            .more-link {
                 padding: 0.5em;
                 text-align: right;
-
-                @include below(medium) {
-                    font-size: 1.5rem;
-                }
-
-                @include below(low) {
-                    font-size: 1.3rem;
-                }
             }
         }
     }

@@ -5,10 +5,11 @@ dependencies:
   config:
     - block_content.type.profile
     - field.field.block_content.profile.field_image
-    - field.field.block_content.profile.field_signing
+    - field.field.block_content.profile.field_link
     - field.field.block_content.profile.field_text
     - field.field.block_content.profile.field_title
   module:
+    - link
     - text
 id: block_content.profile.default
 targetEntityType: block_content
@@ -24,13 +25,17 @@ content:
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: content
-  field_signing:
+  field_link:
     weight: 3
-    label: visually_hidden
+    label: above
     settings:
-      link_to_entity: false
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
-    type: string
+    type: link
     region: content
   field_text:
     weight: 2

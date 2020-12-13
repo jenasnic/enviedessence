@@ -1,0 +1,28 @@
+uuid: 3548ce8a-87e7-412b-840f-c72dcfb36c00
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.enviedessence
+    - field.storage.block_content.field_image
+    - media.type.image
+id: block_content.enviedessence.field_image
+field_name: field_image
+entity_type: block_content
+bundle: enviedessence
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

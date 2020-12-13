@@ -25,14 +25,10 @@
         transition: all 0.8s;
     }
 
-    > .more {
+    > .more-link {
         bottom: 0;
-        color: $theme-color;
-        font-size: 1.7rem;
-        font-weight: 500;
         padding: 0.5em 1em;
         position: absolute;
-        text-transform: uppercase;
         transition: all 0.8s;
         right: 0;
         z-index: 3;
@@ -56,9 +52,10 @@
         z-index: 2;
 
         @include below(low) {
+            height: 40rem;
             right: 0;
+            transform: rotate(-10deg) translate(0rem, 7rem);
             width: 120%;
-            transform: rotate(-10deg) translate(0rem, 3rem);
         }
     }
 
@@ -67,7 +64,7 @@
             opacity: 0;
         }
 
-        > .more {
+        > .more-link {
             bottom: 0;
             opacity: 1;
         }

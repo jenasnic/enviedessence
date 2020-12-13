@@ -1,0 +1,19 @@
+uuid: 7b52de8a-836f-4117-92b2-27eeb85e8b91
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.training
+id: paragraph.training.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: training
+label: Titre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

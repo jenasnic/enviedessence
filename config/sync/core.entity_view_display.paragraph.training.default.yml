@@ -1,0 +1,46 @@
+uuid: 3b3000da-ea2f-48e6-a8d9-c0d1d60b6224
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.training.field_link
+    - field.field.paragraph.training.field_logo
+    - field.field.paragraph.training.field_title
+    - paragraphs.paragraphs_type.training
+  module:
+    - link
+id: paragraph.training.default
+targetEntityType: paragraph
+bundle: training
+mode: default
+content:
+  field_link:
+    weight: 0
+    label: visually_hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_logo:
+    weight: 2
+    label: visually_hidden
+    settings:
+      view_mode: logo
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_title:
+    weight: 1
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

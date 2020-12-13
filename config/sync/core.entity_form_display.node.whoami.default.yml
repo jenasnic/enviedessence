@@ -1,17 +1,13 @@
-uuid: 939a6a20-d528-4537-85e4-eddbdbf9c8e6
+uuid: e46fac6a-a0a2-43d3-a410-1cf10167cfcb
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.node.skill.body
-    - field.field.node.skill.field_image
-    - field.field.node.skill.field_price
-    - field.field.node.skill.field_price_info
-    - field.field.node.skill.field_sessions
-    - field.field.node.skill.field_subtitle
-    - field.field.node.skill.field_teaser
-    - field.field.node.skill.field_thumbnail
-    - node.type.skill
+    - field.field.node.whoami.body
+    - field.field.node.whoami.field_image
+    - field.field.node.whoami.field_signing
+    - field.field.node.whoami.field_trainings
+    - node.type.whoami
   module:
     - field_group
     - media_library
@@ -20,28 +16,35 @@ dependencies:
     - text
 third_party_settings:
   field_group:
-    group_sessions:
+    group_formations:
       children:
-        - field_sessions
+        - field_trainings
       parent_name: ''
-      weight: 8
+      weight: 6
       format_type: details
       region: content
       format_settings:
+        formatter: closed
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        effect: none
+        speed: fast
+        attributes: ''
         open: false
-        required_fields: true
-      label: Séances
-id: node.skill.default
+      label: Formations
+id: node.whoami.default
 targetEntityType: node
-bundle: skill
+bundle: whoami
 mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 4
+    weight: 2
     settings:
       rows: 9
       summary_rows: 3
@@ -50,31 +53,23 @@ content:
     third_party_settings: {  }
     region: content
   field_image:
-    type: media_library_widget
-    weight: 2
+    weight: 0
     settings:
       media_types: {  }
     third_party_settings: {  }
+    type: media_library_widget
     region: content
-  field_price:
-    weight: 6
+  field_signing:
+    weight: 3
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_price_info:
-    weight: 7
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textarea
-    region: content
-  field_sessions:
+  field_trainings:
     type: entity_reference_paragraphs
-    weight: 9
+    weight: 7
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -84,32 +79,9 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
     region: content
-  field_subtitle:
-    weight: 1
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_teaser:
-    weight: 5
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textarea
-    region: content
-  field_thumbnail:
-    type: media_library_widget
-    weight: 3
-    settings:
-      media_types: {  }
-    third_party_settings: {  }
-    region: content
   path:
     type: path
-    weight: 11
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -117,12 +89,12 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 10
+    weight: 5
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
       size: 60

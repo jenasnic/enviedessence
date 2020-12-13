@@ -1,12 +1,12 @@
-uuid: 200a62f7-37ea-4fb6-a245-02a88fe9fac3
+uuid: 42665911-1250-4df1-af24-2a6b9a18f58d
 langcode: fr
 status: true
 dependencies:
   module:
-    - block_content
-id: block_content.field_signing
-field_name: field_signing
-entity_type: block_content
+    - paragraphs
+id: paragraph.field_title
+field_name: field_title
+entity_type: paragraph
 type: string
 settings:
   max_length: 255

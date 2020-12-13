@@ -1,0 +1,13 @@
+.whoami {
+    .first-section {
+        margin-top: calc(2 * #{$default-spacing});
+
+        .signing {
+            font-size: 2rem;
+            font-style: italic;
+            font-weight: 600;
+            margin-top: 1em;
+            text-align: right;
+        }
+    }
+}

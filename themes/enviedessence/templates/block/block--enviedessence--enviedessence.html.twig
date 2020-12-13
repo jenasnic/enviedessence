@@ -13,4 +13,12 @@
     >
         {{ content.field_text }}
     </div>
+    <div data-aos="fade-up" data-aos-duration="1500" class="picture-button-wrapper">
+        <div class="left-line"></div>
+        <a href="{{ content.field_link.0['#url'] }}" class="picture-button">
+            <div class="picture-button__image">{{ content.field_image }}</div>
+            <div class="picture-button__text">{{ content.field_link.0['#title'] }}</div>
+        </a>
+        <div class="right-line"></div>
+    </div>
 </section>

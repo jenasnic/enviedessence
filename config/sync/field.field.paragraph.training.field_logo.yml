@@ -1,0 +1,28 @@
+uuid: 1919bc40-db02-49b3-8e1a-9fe535842d40
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_logo
+    - media.type.image
+    - paragraphs.paragraphs_type.training
+id: paragraph.training.field_logo
+field_name: field_logo
+entity_type: paragraph
+bundle: training
+label: Logo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
