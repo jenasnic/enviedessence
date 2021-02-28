@@ -1,0 +1,10 @@
+uuid: 2753c70f-94eb-48db-bd47-84380cbc85d1
+langcode: fr
+status: true
+dependencies: {  }
+id: training
+label: Formation
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

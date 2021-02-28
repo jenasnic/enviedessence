@@ -5,6 +5,7 @@
 
 @import '~aos/dist/aos.css';
 
+@import 'block/enviedessence';
 @import 'block/profile';
 @import 'block/skills';
 
@@ -12,6 +13,7 @@
 @import 'component/contact-shortcut';
 @import 'component/help-tool';
 @import 'component/link-banner';
+@import 'component/picture-button';
 @import 'component/price';
 @import 'component/scroll-top';
 @import 'component/underline-title';
@@ -21,6 +23,7 @@
 @import 'field/body';
 @import 'field/sessions';
 @import 'field/skills';
+@import 'field/trainings';
 
 @import 'layout/cookie';
 @import 'layout/error';
@@ -33,6 +36,8 @@
 @import 'node/contact';
 @import 'node/skill';
 @import 'node/seminar';
+@import 'node/whoami';
 
 @import 'paragraph/program';
 @import 'paragraph/session';
+@import 'paragraph/training';

@@ -1,0 +1,18 @@
+uuid: 7ba33cda-873e-4af4-a0b7-a5a1b34e4a0e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Présentation
+type: whoami
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -5,10 +5,11 @@ dependencies:
   config:
     - block_content.type.profile
     - field.field.block_content.profile.field_image
-    - field.field.block_content.profile.field_signing
+    - field.field.block_content.profile.field_link
     - field.field.block_content.profile.field_text
     - field.field.block_content.profile.field_title
   module:
+    - link
     - media_library
     - text
 id: block_content.profile.default
@@ -23,13 +24,13 @@ content:
     third_party_settings: {  }
     type: media_library_widget
     region: content
-  field_signing:
+  field_link:
     weight: 26
     settings:
-      size: 60
-      placeholder: ''
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: link_default
     region: content
   field_text:
     weight: 3

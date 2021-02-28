@@ -1,0 +1,40 @@
+uuid: 9c370c7a-5e0b-4d33-9624-55a452e3c37c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_trainings
+    - node.type.whoami
+    - paragraphs.paragraphs_type.training
+  module:
+    - entity_reference_revisions
+id: node.whoami.field_trainings
+field_name: field_trainings
+entity_type: node
+bundle: whoami
+label: Formations
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      training: training
+    target_bundles_drag_drop:
+      formation:
+        weight: 4
+        enabled: false
+      program:
+        weight: 5
+        enabled: false
+      session:
+        weight: 6
+        enabled: false
+      training:
+        enabled: true
+        weight: 8
+field_type: entity_reference_revisions

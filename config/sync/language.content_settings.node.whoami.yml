@@ -1,0 +1,11 @@
+uuid: 9741fed3-506f-4d9e-b10d-e931653af5aa
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.whoami
+id: node.whoami
+target_entity_type_id: node
+target_bundle: whoami
+default_langcode: site_default
+language_alterable: false

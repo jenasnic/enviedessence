@@ -1,0 +1,21 @@
+.field-trainings {
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: $default-spacing;
+    width: 100%;
+
+    .training-wrapper {
+        margin-bottom: 35px;
+        width: 20%;
+
+        @include below(medium) {
+            width: 25%;
+        }
+
+        @include below(low) {
+            width: 50%;
+        }
+    }
+}

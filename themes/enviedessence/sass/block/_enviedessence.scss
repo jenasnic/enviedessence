@@ -1,0 +1,52 @@
+.block-enviedessence {
+    .picture-button-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .left-line, .right-line {
+            background-color: $theme-color;
+            flex-grow: 1;
+            height: 100%;
+            position: relative;
+
+            &:before, &:after {
+                content: '';
+                height: 1px;
+                position: absolute;
+                top: 50%;
+                width: 100%;
+
+                @include below(low) {
+                    display: none;
+                }
+            }
+
+            &:before {
+                background-color: $theme-color;
+            }
+        }
+
+        .left-line {
+            margin-right: $default-spacing;
+
+            &:after {
+                background: linear-gradient(to right, $color-white, transparentize($color-white, 1));
+                left: 0;
+            }
+        }
+
+        .right-line {
+            margin-left: $default-spacing;
+
+            &:after {
+                background: linear-gradient(to left, $color-white, transparentize($color-white, 1));
+                right: 0;
+            }
+        }
+
+        > a.picture-button {
+            text-decoration: none;
+        }
+    }
+}

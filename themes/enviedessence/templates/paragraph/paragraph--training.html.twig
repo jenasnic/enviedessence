@@ -1,0 +1,11 @@
+<div{{ attributes.addClass('training') }}>
+    <div class="training__logo">
+        {% if content.field_link.0['#url'] %}
+            <a href="{{ content.field_link.0['#url'] }}" target="_blank">
+                {{ content.field_logo }}
+            </a>
+        {% else %}
+            {{ content.field_logo }}
+        {% endif %}
+    </div>
+</div>

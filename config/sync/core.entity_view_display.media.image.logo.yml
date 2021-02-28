@@ -1,29 +1,33 @@
-uuid: 5c0c351e-4005-4d3b-ac1c-9808daa69d2c
+uuid: b89e5bd8-3c0b-4193-866c-80c619473f34
 langcode: fr
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.media.banner_small
+    - core.entity_view_mode.media.logo
     - field.field.media.image.field_media_image
+    - image.style.logo
     - media.type.image
-    - responsive_image.styles.banner_small
   module:
-    - responsive_image
+    - svg_image
 _core:
   default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
-id: media.image.banner_small
+id: media.image.logo
 targetEntityType: media
 bundle: image
-mode: banner_small
+mode: logo
 content:
   field_media_image:
-    type: responsive_image
+    type: image
     weight: 0
     region: content
     label: visually_hidden
     settings:
-      responsive_image_style: banner_small
+      image_style: logo
       image_link: ''
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
     third_party_settings: {  }
 hidden:
   created: true

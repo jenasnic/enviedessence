@@ -1,0 +1,55 @@
+uuid: d7c222fb-9620-4b71-aea7-ff69cc0823e5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.whoami.body
+    - field.field.node.whoami.field_image
+    - field.field.node.whoami.field_signing
+    - field.field.node.whoami.field_trainings
+    - node.type.whoami
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.whoami.default
+targetEntityType: node
+bundle: whoami
+mode: default
+content:
+  body:
+    label: visually_hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 0
+    label: visually_hidden
+    settings:
+      view_mode: banner
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_signing:
+    weight: 2
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_trainings:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  links: true
