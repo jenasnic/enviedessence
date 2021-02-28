@@ -1,0 +1,39 @@
+version: "3.6"
+
+services:
+  nginx:
+    image: nginx:1.19
+    network_mode: bridge
+    volumes:
+      - .:/www:ro
+      - ./docker/nginx/enviedessence.conf:/etc/nginx/conf.d/enviedessence.conf:ro
+    environment:
+      NGINX_HOST: enviedessence.local
+    links:
+      - php
+
+  node:
+    image: node:14.15.5
+    network_mode: bridge
+    working_dir: /home/node/app
+    volumes:
+      - .:/home/node/app
+
+  php:
+    image: enviedessence_php
+    build: docker/php
+    network_mode: bridge
+    volumes:
+      - .:/www
+    environment:
+      APP_ENV: dev
+      APP_DEBUG: 1
+    links:
+      - mysql
+
+  mysql:
+    image: mysql:5.7
+    network_mode: bridge
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: enviedessence
