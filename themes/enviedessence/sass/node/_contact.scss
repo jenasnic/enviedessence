@@ -47,24 +47,21 @@
             margin-bottom: 0.6em;
             position: relative;
 
-            &.email, &.home {
-                margin-bottom: 0.9em;
-                padding-bottom: 0.9em;
+            &.home, &.office {
+                line-height: 1.5em;
+                margin-top: 0.9em;
+                padding-top: 0.9em;
 
-                &:after {
+                &:before {
                     background-color: $color-white;
                     content: '';
                     height: 1px;
                     width: 30%;
                     position: absolute;
-                    bottom: 0;
+                    top: 0;
                     left: 50%;
                     transform: translateX(-50%);
                 }
-            }
-
-            &.home, &.office {
-                line-height: 1.5em;
             }
 
             > a {
