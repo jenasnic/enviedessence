@@ -5,8 +5,10 @@ dependencies:
   config:
     - block_content.type.banner
     - field.field.block_content.banner.field_image
-    - field.field.block_content.banner.field_subtitle
+    - field.field.block_content.banner.field_logo
     - field.field.block_content.banner.field_title
+  module:
+    - svg_image
 id: block_content.banner.default
 targetEntityType: block_content
 bundle: banner
@@ -21,13 +23,18 @@ content:
       link: false
     third_party_settings: {  }
     region: content
-  field_subtitle:
-    weight: 1
+  field_logo:
+    weight: 3
     label: visually_hidden
     settings:
-      link_to_entity: false
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
     third_party_settings: {  }
-    type: string
+    type: image
     region: content
   field_title:
     weight: 0
