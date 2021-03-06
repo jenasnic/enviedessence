@@ -1,0 +1,8 @@
+<article{{ attributes.addClass('blog-teaser') }}>
+    {{ content.field_thumbnail }}
+    <div class="blog">
+        <h2 class="blog__title">{{ node.getTitle() }}</h2>
+        <div class="blog__body">{{ content.field_content }}</div>
+        <div class="blog__link">{{ content.field_link }}</div>
+    </div>
+</article>

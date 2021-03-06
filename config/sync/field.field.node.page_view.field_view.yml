@@ -1,0 +1,41 @@
+uuid: c893a4b4-c693-4084-9ad4-4b4f1d3c082b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_view
+    - node.type.page_view
+  module:
+    - viewsreference
+id: node.page_view.field_view
+field_name: field_view
+entity_type: node
+bundle: page_view
+label: Vue
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    default: default
+    page: page
+    block: block
+    feed: 0
+  preselect_views:
+    block_content: 0
+    blogs: 0
+    content: 0
+    content_recent: 0
+    files: 0
+    frontpage: 0
+    media_library: 0
+    user_admin_people: 0
+    who_s_new: 0
+    who_s_online: 0
+field_type: viewsreference

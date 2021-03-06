@@ -1,6 +1,6 @@
 footer {
     background-color: $theme-color;
-    margin-top: $default-spacing;
+    margin-top: calc(#{$default-spacing} * 2);
     position: relative;
 
     ul {

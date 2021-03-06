@@ -1,0 +1,19 @@
+uuid: 108152b6-84bd-4388-8ae4-91e63134ce9d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtitle
+    - node.type.page_view
+id: node.page_view.field_subtitle
+field_name: field_subtitle
+entity_type: node
+bundle: page_view
+label: Sous-titre
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
