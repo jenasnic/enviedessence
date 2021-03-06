@@ -29,9 +29,13 @@ vendor:
 cache:
 	$(DOCKER_USER) $(DRUSH_BIN) cache:rebuild
 
-.PHONY: config
-config:
+.PHONY: import
+import:
 	$(DOCKER_USER) $(DRUSH_BIN) config:import
+
+.PHONY: export
+export:
+	$(DOCKER_USER) $(DRUSH_BIN) config:export
 
 
 

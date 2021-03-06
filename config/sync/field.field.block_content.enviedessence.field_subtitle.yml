@@ -1,18 +1,18 @@
-uuid: ee907211-966d-49c5-b116-178f51f08f55
+uuid: efd4283f-566b-4cea-b730-09f8c67b354c
 langcode: fr
 status: true
 dependencies:
   config:
-    - block_content.type.banner
+    - block_content.type.enviedessence
     - field.storage.block_content.field_subtitle
-id: block_content.banner.field_subtitle
+id: block_content.enviedessence.field_subtitle
 field_name: field_subtitle
 entity_type: block_content
-bundle: banner
+bundle: enviedessence
 label: Sous-titre
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
