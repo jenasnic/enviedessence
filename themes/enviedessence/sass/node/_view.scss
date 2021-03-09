@@ -6,28 +6,58 @@ $rotateY: 2deg;
     .views-infinite-scroll-content-wrapper {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
         margin-top: $default-spacing;
         width: 100%;
 
+        // Fix to prevent offset on last element (infinite scroll)
+        &:after {
+            width: 100%;
+        }
+
         .views-row {
-            // border-top: 1px solid $theme-color;
-            margin: 0 $default-spacing $default-spacing $default-spacing;
-            position: relative;
+            margin-bottom: $default-spacing;
             transition: all 1.8s;
-            width: calc(50% - (#{$default-spacing} * 2));
+            width: calc(50% - #{$default-spacing});
+
+            @include below(medium) {
+                width: 80%;
+            }
+
+            @include below(low) {
+                margin: 0 0 $default-spacing 0;
+                width: 100%;
+            }
 
             &:nth-child(odd) {
                 border-left: 15px solid $theme-color;
                 border-radius: $radius 0 0 $radius;
-                transform: perspective(8.5cm) rotateY($rotateY);
-                transform-origin: left;
                 box-shadow: 5px 10px 15px -5px transparentize($box-shadow-color, 0.7),
                     0 0 15px 0 transparentize($box-shadow-color, 0.9);
+
+                @include above(low) {
+                    transform: perspective(8.5cm) rotateY($rotateY);
+                    transform-origin: left;
+                }
 
                 .blog-teaser {
                     picture {
                         float: left;
                         margin: 0 $view-row-pading $view-row-pading 0;
+                    }
+
+                    .blog__link {
+                        text-align: right;
+
+                        a {
+                            &:after {
+                                right: 0;
+                            }
+
+                            &:hover {
+                                padding-right: 30px;
+                            }
+                        }
                     }
                 }
             }
@@ -35,15 +65,32 @@ $rotateY: 2deg;
             &:nth-child(even) {
                 border-right: 15px solid $theme-color;
                 border-radius: 0 $radius $radius 0;
-                transform: perspective(8.5cm) rotateY(-$rotateY);
-                transform-origin: right;
                 box-shadow: -5px 10px 15px -5px transparentize($box-shadow-color, 0.7),
                     0 0 15px 0 transparentize($box-shadow-color, 0.9);
+
+                @include above(low) {
+                    transform: perspective(8.5cm) rotateY(-$rotateY);
+                    transform-origin: right;
+                }
 
                 .blog-teaser {
                     picture {
                         float: right;
                         margin: 0 0 $view-row-pading $view-row-pading;
+                    }
+
+                    .blog__link {
+                        text-align: left;
+
+                        a {
+                            &:after {
+                                left: 0;
+                            }
+
+                            &:hover {
+                                padding-left: 30px;
+                            }
+                        }
                     }
                 }
             }

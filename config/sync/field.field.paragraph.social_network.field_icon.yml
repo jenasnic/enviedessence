@@ -1,0 +1,19 @@
+uuid: 619872db-84f3-4d30-86bb-d233c8510899
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon
+    - paragraphs.paragraphs_type.social_network
+id: paragraph.social_network.field_icon
+field_name: field_icon
+entity_type: paragraph
+bundle: social_network
+label: Icône
+description: 'Icône de la font Glyphter Enviedessence (facebook, instagram, twitter)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

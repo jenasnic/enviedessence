@@ -1,0 +1,25 @@
+uuid: d36d112a-abac-4dcb-842c-de92825367de
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.social_network
+    - field.field.block_content.social_network.field_social_network
+  module:
+    - entity_reference_revisions
+id: block_content.social_network.default
+targetEntityType: block_content
+bundle: social_network
+mode: default
+content:
+  field_social_network:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

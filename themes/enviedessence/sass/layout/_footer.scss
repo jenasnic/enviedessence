@@ -27,4 +27,18 @@ footer {
             }
         }
     }
+
+    .block-social-network {
+        font-size: 2.5rem;
+        height: 100%;
+        position: absolute;
+        right: 20px;
+        top: 0;
+
+        .social-network {
+            > a {
+                color: $color-white;
+            }
+        }
+    }
 }

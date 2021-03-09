@@ -1,0 +1,23 @@
+.block-social-network {
+    align-items: center;
+    display: flex;
+
+    > div {
+        display: flex;
+    }
+
+    .social-network {
+        font-size: 1em;
+        margin: 0 10px;
+
+        transition: all 0.3s;
+
+        &:hover {
+            transform: rotate(-5deg) translateY(-3px);
+        }
+
+        > a {
+            color: $theme-color;
+        }
+    }
+}
