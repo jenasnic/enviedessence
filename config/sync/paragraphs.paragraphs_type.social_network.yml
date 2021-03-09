@@ -1,0 +1,10 @@
+uuid: 03ed5048-a269-4ac5-ba0c-5a6ea321cf5f
+langcode: fr
+status: true
+dependencies: {  }
+id: social_network
+label: 'Réseau social'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

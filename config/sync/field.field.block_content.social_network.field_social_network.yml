@@ -1,0 +1,40 @@
+uuid: bac9dc2f-bd76-43c2-ad32-e210efc84479
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.social_network
+    - field.storage.block_content.field_social_network
+    - paragraphs.paragraphs_type.social_network
+  module:
+    - entity_reference_revisions
+id: block_content.social_network.field_social_network
+field_name: field_social_network
+entity_type: block_content
+bundle: social_network
+label: 'Réseau social'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      social_network: social_network
+    target_bundles_drag_drop:
+      program:
+        weight: 6
+        enabled: false
+      session:
+        weight: 7
+        enabled: false
+      social_network:
+        enabled: true
+        weight: 5
+      training:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

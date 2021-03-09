@@ -23,14 +23,13 @@
 
         &__link {
             font-size: 1.3rem;
-            text-align: right;
             text-transform: uppercase;
 
             a {
                 color: $theme-color;
                 font-weight: 700;
-                position: relative;
                 text-decoration: none;
+                position: relative;
                 transition: all 1s;
 
                 &:after {
@@ -38,15 +37,12 @@
                     content: '';
                     height: 1px;
                     position: absolute;
-                    right: 0;
                     top: 50%;
                     transition: all 1s;
                     width: 0;
                 }
 
                 &:hover {
-                    padding-right: 30px;
-
                     &:after {
                         width: 20px;
                     }

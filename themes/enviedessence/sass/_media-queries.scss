@@ -1,11 +1,11 @@
 /**
 * Used to declare media queries. Usage examples :
-* - @include above(sm) {...}
-* - @include below(sm) {...}
-* - @include between(sm, md) {...}
+* - @include above(low) {...}
+* - @include below(low) {...}
+* - @include between(low, medium) {...}
  */
 
-// @include above(sm) {}
+// @include above(medium) {}
 @mixin above($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
     $breakpoint-value: map-get($breakpoints, $breakpoint);
@@ -25,7 +25,7 @@
   }
 }
 
-// @include below(sm) {}
+// @include below(medium) {}
 @mixin below($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
     $breakpoint-value: map-get($breakpoints, $breakpoint);
@@ -45,7 +45,7 @@
   }
 }
 
-// @include between(sm, md) {}
+// @include between(low, medium) {}
 @mixin between($lower, $upper) {
   @if map-has-key($breakpoints, $lower) and map-has-key($breakpoints, $upper) {
     $lower-breakpoint: map-get($breakpoints, $lower);
