@@ -1,33 +1,33 @@
-uuid: 719d4065-af3e-4f83-82f4-b4d716653730
+uuid: ea4e2d53-1140-4ef6-8cc9-6ab2f20881c8
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.node.page.body
-    - field.field.node.page.field_image
-    - field.field.node.page.field_subtitle
-    - node.type.page
+    - field.field.node.page_view.body
+    - field.field.node.page_view.field_image
+    - field.field.node.page_view.field_subtitle
+    - field.field.node.page_view.field_view
+    - node.type.page_view
   module:
     - media_library
     - path
     - text
-_core:
-  default_config_hash: AD_lefuYmjsKeH3OQApsyP_nLj6ZnGaALznLQSQ0Z_o
-id: node.page.default
+    - viewsreference
+id: node.page_view.default
 targetEntityType: node
-bundle: page
+bundle: page_view
 mode: default
 content:
   body:
     type: text_textarea_with_summary
     weight: 3
-    region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
+    region: content
   field_image:
     weight: 0
     settings:
@@ -43,9 +43,15 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_view:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: viewsreference_select
+    region: content
   path:
     type: path
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -53,7 +59,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 6
     region: content
     third_party_settings: {  }
   title:

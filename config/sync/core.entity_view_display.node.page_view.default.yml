@@ -1,29 +1,29 @@
-uuid: 01047bcf-6f93-462b-a50d-7617a48c4403
+uuid: af4e1758-3ebf-49b6-b25c-c99a267939bd
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.node.page.body
-    - field.field.node.page.field_image
-    - field.field.node.page.field_subtitle
-    - node.type.page
+    - field.field.node.page_view.body
+    - field.field.node.page_view.field_image
+    - field.field.node.page_view.field_subtitle
+    - field.field.node.page_view.field_view
+    - node.type.page_view
   module:
     - text
     - user
-_core:
-  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
-id: node.page.default
+    - viewsreference
+id: node.page_view.default
 targetEntityType: node
-bundle: page
+bundle: page_view
 mode: default
 content:
   body:
     label: visually_hidden
     type: text_default
     weight: 2
-    region: content
     settings: {  }
     third_party_settings: {  }
+    region: content
   field_image:
     weight: 0
     label: visually_hidden
@@ -40,6 +40,15 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_view:
+    weight: 3
+    label: visually_hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
     region: content
 hidden:
   langcode: true

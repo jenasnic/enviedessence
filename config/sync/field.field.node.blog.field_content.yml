@@ -1,0 +1,21 @@
+uuid: 4b3e385c-86e3-4a26-bbe0-6cd776db5f40
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.blog
+  module:
+    - text
+id: node.blog.field_content
+field_name: field_content
+entity_type: node
+bundle: blog
+label: Contenu
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
