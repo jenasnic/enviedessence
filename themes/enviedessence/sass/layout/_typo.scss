@@ -36,3 +36,66 @@ a, img {
         font-size: 1.3rem;
     }
 }
+
+.expand-link {
+    color: var(--theme-color);
+    cursor: pointer;
+    display: block;
+    font-size: 1.7rem;
+    font-weight: 500;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 1s;
+    width: 100%;
+
+    @include below(medium) {
+        font-size: 1.5rem;
+    }
+
+    @include below(low) {
+        font-size: 1.3rem;
+    }
+
+    &:after {
+        background-color: $theme-color;
+        content: '';
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        transition: all 1s;
+        width: 0;
+    }
+
+    &--right {
+        text-align: right;
+
+        &:after {
+            right: 0;
+        }
+
+        &:hover {
+            padding-right: 30px;
+
+            &:after {
+                width: 20px;
+            }
+        }
+    }
+
+    &--left {
+        text-align: left;
+
+        &:after {
+            left: 0;
+        }
+
+        &:hover {
+            padding-left: 30px;
+
+            &:after {
+                width: 20px;
+            }
+        }
+    }
+}
