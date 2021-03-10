@@ -1,0 +1,18 @@
+{% set classes = [
+    'block-blog',
+    'container',
+] %}
+
+<section{{ attributes.addClass(classes) }}>
+    {% include '@enviedessence/component/_underline-title.html.twig' with { title: content.field_title } %}
+    <div
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        class="text"
+    >
+        {{ content.field_view }}
+    </div>
+    <a href="{{ content.field_link.0['#url'] }}" class="expand-link expand-link--right">
+        {{ content.field_link.0['#title'] }}
+    </a>
+</section>
