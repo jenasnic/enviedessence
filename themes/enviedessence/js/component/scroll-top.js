@@ -7,7 +7,7 @@ const initScrollActions = () => {
 
 const processScrollPosition = () => {
   // NOTE : check for Safari and others
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
     scrollTopButton.classList.add('active');
   } else {
     scrollTopButton.classList.remove('active');

@@ -1,9 +1,12 @@
 $view-row-pading: calc(#{$default-spacing} / 2);
 $radius: 10px;
-$rotateY: 2deg;
 
 .view-blog-home {
     justify-content: space-between;
+
+    @include below(medium) {
+        justify-content: center;
+    }
 }
 
 .view-blog-scroll > .views-infinite-scroll-content-wrapper {
@@ -23,7 +26,6 @@ $rotateY: 2deg;
 
     .views-row {
         margin-bottom: $default-spacing;
-        transition: all 1.8s;
         width: calc(50% - #{$default-spacing});
 
         @include below(medium) {
@@ -35,15 +37,13 @@ $rotateY: 2deg;
             width: 100%;
         }
 
-        &:nth-child(odd) {
-            border-left: 15px solid $theme-color;
-            border-radius: $radius 0 0 $radius;
+        &.odd {
             box-shadow: 5px 10px 15px -5px transparentize($box-shadow-color, 0.7),
                 0 0 15px 0 transparentize($box-shadow-color, 0.9);
 
             @include above(low) {
-                transform: perspective(8.5cm) rotateY($rotateY);
-                transform-origin: left;
+                border-left: 15px solid $theme-color;
+                border-radius: $radius 0 0 $radius;
             }
 
             .blog-teaser {
@@ -55,28 +55,30 @@ $rotateY: 2deg;
                 .blog__link {
                     text-align: right;
 
-                    a {
-                        &:after {
-                            right: 0;
-                        }
+                    &:after {
+                        right: 0;
+                    }
+                }
 
-                        &:hover {
-                            padding-right: 30px;
+                &:hover {
+                    .blog__link {
+                        padding-right: 30px;
+
+                        &:after {
+                            width: 20px;
                         }
                     }
                 }
             }
         }
 
-        &:nth-child(even) {
-            border-right: 15px solid $theme-color;
-            border-radius: 0 $radius $radius 0;
+        &.even {
             box-shadow: -5px 10px 15px -5px transparentize($box-shadow-color, 0.7),
                 0 0 15px 0 transparentize($box-shadow-color, 0.9);
 
             @include above(low) {
-                transform: perspective(8.5cm) rotateY(-$rotateY);
-                transform-origin: right;
+                border-radius: 0 $radius $radius 0;
+                border-right: 15px solid $theme-color;
             }
 
             .blog-teaser {
@@ -88,22 +90,21 @@ $rotateY: 2deg;
                 .blog__link {
                     text-align: left;
 
-                    a {
-                        &:after {
-                            left: 0;
-                        }
+                    &:after {
+                        left: 0;
+                    }
+                }
 
-                        &:hover {
-                            padding-left: 30px;
+                &:hover {
+                    .blog__link {
+                        padding-left: 30px;
+
+                        &:after {
+                            width: 20px;
                         }
                     }
                 }
             }
-        }
-
-        &:hover {
-            cursor: pointer;
-            transform: none;
         }
 
         .blog-teaser .blog {

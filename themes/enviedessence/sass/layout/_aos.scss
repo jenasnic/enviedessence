@@ -1,0 +1,24 @@
+$perspective-angle: 5deg;
+$perspective-distance: 4.4cm;
+
+[data-aos="perspective-left"] {
+    @include above(low) {
+        transform: perspective($perspective-distance) rotateY($perspective-angle);
+        transform-origin: left;
+
+        &.aos-animate {
+            transform: none;
+        }
+    }
+}
+
+[data-aos="perspective-right"] {
+    @include above(low) {
+        transform: perspective($perspective-distance) rotateY(-$perspective-angle);
+        transform-origin: right;
+
+        &.aos-animate {
+            transform: none;
+        }
+    }
+}

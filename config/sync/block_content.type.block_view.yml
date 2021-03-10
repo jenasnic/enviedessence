@@ -1,0 +1,8 @@
+uuid: 5735ea38-3501-4954-ad64-030011079b8c
+langcode: fr
+status: true
+dependencies: {  }
+id: block_view
+label: 'Bloc vue'
+revision: 0
+description: ''

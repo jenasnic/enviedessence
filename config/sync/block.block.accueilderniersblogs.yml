@@ -1,0 +1,25 @@
+uuid: 97fcae41-8a8f-49fd-a3da-f72b7e85d0ac
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:block_view:43685dd2-001b-4219-b943-8558c4c93952'
+  module:
+    - block_content
+  theme:
+    - enviedessence
+id: accueilderniersblogs
+theme: enviedessence
+region: homepage
+weight: 0
+provider: null
+plugin: 'block_content:43685dd2-001b-4219-b943-8558c4c93952'
+settings:
+  id: 'block_content:43685dd2-001b-4219-b943-8558c4c93952'
+  label: 'Accueil - Derniers blogs'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
