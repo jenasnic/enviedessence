@@ -50,7 +50,7 @@ assets:
 
 .PHONY: watch
 watch:
-	$(DOCKER_ROOT) $(YARN_BIN) --cwd ./themes/enviedessence start
+	$(DOCKER_USER) $(YARN_BIN) --cwd ./themes/enviedessence start
 
 .PHONY: build
 build:

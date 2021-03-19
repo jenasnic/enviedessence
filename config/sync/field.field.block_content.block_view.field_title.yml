@@ -1,0 +1,19 @@
+uuid: ee16bdec-9e13-4879-a714-c7553def7839
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.block_view
+    - field.storage.block_content.field_title
+id: block_content.block_view.field_title
+field_name: field_title
+entity_type: block_content
+bundle: block_view
+label: Titre
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,24 @@
+uuid: ffa7684b-f803-4a44-84b3-405063e8c020
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_date
+    - node.type.blog
+  module:
+    - datetime
+id: node.blog.field_publication_date
+field_name: field_publication_date
+entity_type: node
+bundle: blog
+label: 'Date de publication'
+description: 'Date non affichée utilisée pour l’ordonnancement des blogs'
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

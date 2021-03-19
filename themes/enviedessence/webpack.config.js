@@ -68,6 +68,13 @@ let config = {
             'jQuery': 'jquery',
         }),
     ],
+    // Specific configuration for docker usage
+    watchOptions: {
+        poll: true,
+        ignored: [
+            path.resolve(__dirname, './node_modules'),
+        ]
+    },
 };
 
 module.exports = config;

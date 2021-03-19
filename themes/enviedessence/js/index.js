@@ -1,6 +1,6 @@
 import '../sass/style.scss';
 
-import './component/contact-shortcut';
+import './component/circle-shortcut';
 import './component/help-tool';
 import './component/menu';
 import './component/scroll-top';

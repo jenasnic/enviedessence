@@ -1,7 +1,7 @@
 $padding-off: 1em;
 $padding-on: 3em;
 
-#contact-shortcut {
+#circle-shortcut {
     bottom: 20%;
     color: $color-white;
     cursor: pointer;
@@ -61,13 +61,25 @@ $padding-on: 3em;
             transition: all 0.8s;
             transform: scale(0);
         }
+
         .text-top {
             top: calc(#{$padding-off} - #{$padding-on});
             left: calc(#{$padding-off} - #{$padding-on});
         }
+
         .text-bottom {
             bottom: calc(#{$padding-off} - #{$padding-on});
             left: calc(#{$padding-off} - #{$padding-on});
+        }
+
+        &.blogs {
+            .text-top {
+                left: calc(#{$padding-off} - 1.9em);
+            }
+
+            .text-bottom {
+                left: calc(#{$padding-off} - 1.4em);
+            }
         }
     }
 

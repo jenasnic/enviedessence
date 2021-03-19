@@ -1,0 +1,18 @@
+{% if title %}
+    {% include '@enviedessence/component/_underline-title.html.twig' with { title: title } %}
+{% endif %}
+{% for row in rows %}
+  {%
+    set row_classes = [
+      default_row_class ? 'views-row',
+      (loop.index % 2) ? 'odd' : 'even',
+    ]
+  %}
+  <div
+    data-aos="perspective-{{ (loop.index % 2) ? 'left' : 'right' }}"
+    data-aos-duration="2200"
+    {{ row.attributes.addClass(row_classes) }}
+  >
+    {{- row.content -}}
+  </div>
+{% endfor %}

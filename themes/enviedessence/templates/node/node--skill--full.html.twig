@@ -1,4 +1,10 @@
-{% include '@enviedessence/component/_contact-shortcut.html.twig' %}
+{% include '@enviedessence/component/_circle-shortcut.html.twig' with {
+    link: '/contact',
+    textTop: 'Une séance ?',
+    textBottom: 'Me contacter',
+    icon: 'email-full',
+    cssClass: 'contact'
+} only %}
 
 <article{{ attributes.addClass('skill-full') }}>
 

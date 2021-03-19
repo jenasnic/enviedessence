@@ -1,0 +1,33 @@
+uuid: 847d9a09-e97e-4acf-b214-84cbfccd536b
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:c83765ea-a101-40fe-bd74-a516ff83cf2d'
+  module:
+    - block_content
+    - node
+  theme:
+    - enviedessence
+id: blogbanniere
+theme: enviedessence
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:c83765ea-a101-40fe-bd74-a516ff83cf2d'
+settings:
+  id: 'block_content:c83765ea-a101-40fe-bd74-a516ff83cf2d'
+  label: 'Blog - Bannière'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      blog: blog
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

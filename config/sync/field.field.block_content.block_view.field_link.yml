@@ -1,0 +1,23 @@
+uuid: b0c70611-00ad-4294-b323-66de3d2cf42c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.block_view
+    - field.storage.block_content.field_link
+  module:
+    - link
+id: block_content.block_view.field_link
+field_name: field_link
+entity_type: block_content
+bundle: block_view
+label: Lien
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 1
+field_type: link

@@ -1,0 +1,26 @@
+{% include '@enviedessence/component/_circle-shortcut.html.twig' with {
+    link: '/blogs',
+    textTop: 'Retour',
+    textBottom: 'Blogs',
+    icon: 'revert',
+    cssClass: 'blogs'
+} only %}
+
+<article{{ attributes.addClass('blog-full') }}>
+
+    {% include '@enviedessence/component/_underline-title.html.twig' with { title: node.getTitle() } %}
+
+    <section class="blog first-section container">
+        <div class="blog__image">
+            {{ content.field_thumbnail }}
+        </div>
+        <div class="blog__body body-content text">
+            <span class="icon icon-quote"></span>
+            {{ content.field_content }}
+        </div>
+        <div class="blog__link">
+            {{ content.field_link }}
+        </div>
+    </section>
+
+</article>
