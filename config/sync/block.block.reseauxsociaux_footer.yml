@@ -1,0 +1,25 @@
+uuid: 1e2e2f22-ed8c-4ba0-8303-22ed6604cd95
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:social_network:d45f9304-6f4c-431a-8ef1-a6358929c689'
+  module:
+    - block_content
+  theme:
+    - enviedessence
+id: reseauxsociaux_footer
+theme: enviedessence
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:d45f9304-6f4c-431a-8ef1-a6358929c689'
+settings:
+  id: 'block_content:d45f9304-6f4c-431a-8ef1-a6358929c689'
+  label: 'Réseaux sociaux'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

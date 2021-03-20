@@ -1,0 +1,25 @@
+uuid: bca753c1-9450-4a8a-b6b1-1dd672f77b9a
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:skills:d1d48951-f525-4555-a45e-b713f1efc9a3'
+  module:
+    - block_content
+  theme:
+    - enviedessence
+id: accueilservices
+theme: enviedessence
+region: homepage
+weight: -3
+provider: null
+plugin: 'block_content:d1d48951-f525-4555-a45e-b713f1efc9a3'
+settings:
+  id: 'block_content:d1d48951-f525-4555-a45e-b713f1efc9a3'
+  label: 'Accueil - Services'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,9 +1,9 @@
-uuid: 6ef8491a-e8b8-442e-b44a-67e0af37f9f4
+uuid: de36b75b-6109-4f68-99e4-17f4435bd1bd
 langcode: fr
-status: true
+status: false
 dependencies:
   content:
-    - 'block_content:seminar:8dcf2732-66b8-4471-b185-4dc9b69c1085'
+    - 'block_content:seminar:0f523ada-1391-4cea-b6bf-db50f9b70652'
   module:
     - block_content
   theme:
@@ -11,11 +11,11 @@ dependencies:
 id: accueilseminaire
 theme: enviedessence
 region: homepage
-weight: 1
+weight: -1
 provider: null
-plugin: 'block_content:8dcf2732-66b8-4471-b185-4dc9b69c1085'
+plugin: 'block_content:0f523ada-1391-4cea-b6bf-db50f9b70652'
 settings:
-  id: 'block_content:8dcf2732-66b8-4471-b185-4dc9b69c1085'
+  id: 'block_content:0f523ada-1391-4cea-b6bf-db50f9b70652'
   label: 'Accueil - Séminaire'
   provider: block_content
   label_display: '0'

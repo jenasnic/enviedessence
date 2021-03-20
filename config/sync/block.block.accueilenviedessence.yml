@@ -1,9 +1,9 @@
-uuid: 36967ee2-ed58-45cd-ad21-55006b38015c
+uuid: 6b997fa4-b161-444c-aa25-e500bbe51466
 langcode: fr
 status: true
 dependencies:
   content:
-    - 'block_content:enviedessence:da49b584-cb69-44f8-8336-2dbf4fc232bc'
+    - 'block_content:enviedessence:c2e9f40a-2963-42be-a47e-0b2522eed3b0'
   module:
     - block_content
   theme:
@@ -11,11 +11,11 @@ dependencies:
 id: accueilenviedessence
 theme: enviedessence
 region: homepage
-weight: -2
+weight: -4
 provider: null
-plugin: 'block_content:da49b584-cb69-44f8-8336-2dbf4fc232bc'
+plugin: 'block_content:c2e9f40a-2963-42be-a47e-0b2522eed3b0'
 settings:
-  id: 'block_content:da49b584-cb69-44f8-8336-2dbf4fc232bc'
+  id: 'block_content:c2e9f40a-2963-42be-a47e-0b2522eed3b0'
   label: 'Accueil - Enviedessence'
   provider: block_content
   label_display: '0'
