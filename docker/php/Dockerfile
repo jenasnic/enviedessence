@@ -10,6 +10,4 @@ RUN echo 'Europe/Paris' > /etc/timezone
 
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 
-USER www-data
-
 WORKDIR /www

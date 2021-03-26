@@ -6,5 +6,5 @@ global-styling:
   js:
     build/index.js: {}
   dependencies:
-  - core/drupal
-  - core/jquery
+    - core/drupal
+    - core/jquery

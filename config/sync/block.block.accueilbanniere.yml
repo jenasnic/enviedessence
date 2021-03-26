@@ -1,9 +1,9 @@
-uuid: 083ae30b-9df6-412e-b4f7-bc6688bf967a
+uuid: 870f9c22-f642-4947-aaa9-ba1a8233654a
 langcode: fr
 status: true
 dependencies:
   content:
-    - 'block_content:banner:528ae719-7f07-4762-b510-649c3c0ff8f2'
+    - 'block_content:banner:4dcd3bae-643a-4b30-9013-1faefc399ba2'
   module:
     - block_content
   theme:
@@ -11,11 +11,11 @@ dependencies:
 id: accueilbanniere
 theme: enviedessence
 region: homepage
-weight: -3
+weight: -5
 provider: null
-plugin: 'block_content:528ae719-7f07-4762-b510-649c3c0ff8f2'
+plugin: 'block_content:4dcd3bae-643a-4b30-9013-1faefc399ba2'
 settings:
-  id: 'block_content:528ae719-7f07-4762-b510-649c3c0ff8f2'
+  id: 'block_content:4dcd3bae-643a-4b30-9013-1faefc399ba2'
   label: 'Accueil - Bannière'
   provider: block_content
   label_display: '0'

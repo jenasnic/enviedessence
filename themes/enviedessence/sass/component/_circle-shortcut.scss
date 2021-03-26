@@ -72,7 +72,7 @@ $padding-on: 3em;
             left: calc(#{$padding-off} - #{$padding-on});
         }
 
-        &.blogs {
+        &.circle-shortcut--blogs {
             .text-top {
                 left: calc(#{$padding-off} - 1.9em);
             }

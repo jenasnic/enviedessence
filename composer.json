@@ -25,6 +25,7 @@
         "drupal/eu_cookie_compliance": "^1.13",
         "drupal/field_group": "^3.1",
         "drupal/paragraphs": "^1.12",
+        "drupal/pathauto": "^1.8",
         "drupal/svg_image": "^1.14",
         "drupal/views_infinite_scroll": "^1.8",
         "drupal/viewsreference": "^1.7",

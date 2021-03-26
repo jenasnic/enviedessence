@@ -9,6 +9,10 @@ header {
     width: 100%;
     z-index: 5;
 
+    @include below(low) {
+        height: calc(4.3rem + 40px);
+    }
+
     > nav {
         background-color: transparentize($color-white, 0.35);
         width: 100%;

@@ -25,6 +25,7 @@ services:
     network_mode: bridge
     volumes:
       - .:/www
+      - ./docker/php/conf.d/upload.ini:/usr/local/etc/php/conf.d/uploads.ini:ro
     environment:
       APP_ENV: dev
       APP_DEBUG: 1

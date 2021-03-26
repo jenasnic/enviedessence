@@ -1,9 +1,9 @@
-uuid: 97fcae41-8a8f-49fd-a3da-f72b7e85d0ac
+uuid: 749f6cf5-8c37-4c02-84e1-a1685c45fa4c
 langcode: fr
-status: true
+status: false
 dependencies:
   content:
-    - 'block_content:block_view:43685dd2-001b-4219-b943-8558c4c93952'
+    - 'block_content:block_view:7c6dc9c7-e790-4a64-ab99-605c31c3163b'
   module:
     - block_content
   theme:
@@ -11,11 +11,11 @@ dependencies:
 id: accueilderniersblogs
 theme: enviedessence
 region: homepage
-weight: 0
+weight: -2
 provider: null
-plugin: 'block_content:43685dd2-001b-4219-b943-8558c4c93952'
+plugin: 'block_content:7c6dc9c7-e790-4a64-ab99-605c31c3163b'
 settings:
-  id: 'block_content:43685dd2-001b-4219-b943-8558c4c93952'
+  id: 'block_content:7c6dc9c7-e790-4a64-ab99-605c31c3163b'
   label: 'Accueil - Derniers blogs'
   provider: block_content
   label_display: '0'
