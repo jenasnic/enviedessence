@@ -1,0 +1,21 @@
+uuid: b2bdfdb3-2949-4e8b-b0a4-0bdf314faa76
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.skill
+  module:
+    - metatag
+id: node.skill.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: skill
+label: Metatags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

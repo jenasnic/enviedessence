@@ -1,0 +1,21 @@
+uuid: 3853386e-0231-4380-8130-83430a78e954
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.blog
+  module:
+    - metatag
+id: node.blog.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: blog
+label: Metatags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

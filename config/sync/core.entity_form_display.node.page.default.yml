@@ -5,10 +5,12 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_image
+    - field.field.node.page.field_metatags
     - field.field.node.page.field_subtitle
     - node.type.page
   module:
     - media_library
+    - metatag
     - path
     - text
 _core:
@@ -34,6 +36,13 @@ content:
       media_types: {  }
     third_party_settings: {  }
     type: media_library_widget
+    region: content
+  field_metatags:
+    weight: 26
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_subtitle:
     weight: 2

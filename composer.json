@@ -24,6 +24,7 @@
         "drupal/core-vendor-hardening": "^8.8",
         "drupal/eu_cookie_compliance": "^1.13",
         "drupal/field_group": "^3.1",
+        "drupal/metatag": "^1.16",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
         "drupal/svg_image": "^1.14",

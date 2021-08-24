@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.skill.body
     - field.field.node.skill.field_image
+    - field.field.node.skill.field_metatags
     - field.field.node.skill.field_price
     - field.field.node.skill.field_price_info
     - field.field.node.skill.field_sessions
@@ -14,6 +15,7 @@ dependencies:
     - node.type.skill
   module:
     - entity_reference_revisions
+    - metatag
     - text
     - user
 id: node.skill.default
@@ -36,6 +38,13 @@ content:
       view_mode: banner
       link: false
     third_party_settings: {  }
+    region: content
+  field_metatags:
+    weight: 7
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
     region: content
   field_price:
     weight: 3

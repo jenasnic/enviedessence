@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.field.node.blog.field_content
     - field.field.node.blog.field_link
+    - field.field.node.blog.field_metatags
     - field.field.node.blog.field_publication_date
     - field.field.node.blog.field_thumbnail
     - node.type.blog
   module:
     - datetime
     - link
+    - metatag
     - text
     - user
 id: node.blog.default
@@ -36,6 +38,13 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+    region: content
+  field_metatags:
+    weight: 4
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
     region: content
   field_publication_date:
     weight: 0

@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.seminar.field_date_end
     - field.field.node.seminar.field_date_start
     - field.field.node.seminar.field_image
+    - field.field.node.seminar.field_metatags
     - field.field.node.seminar.field_place
     - field.field.node.seminar.field_place_link
     - field.field.node.seminar.field_price
@@ -40,6 +41,7 @@ hidden:
   field_date_end: true
   field_date_start: true
   field_image: true
+  field_metatags: true
   field_place: true
   field_place_link: true
   field_price: true

@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.contact.field_home_address
     - field.field.node.contact.field_home_link
     - field.field.node.contact.field_image
+    - field.field.node.contact.field_metatags
     - field.field.node.contact.field_office_address
     - field.field.node.contact.field_office_link
     - field.field.node.contact.field_phone
@@ -29,6 +30,7 @@ hidden:
   field_home_address: true
   field_home_link: true
   field_image: true
+  field_metatags: true
   field_office_address: true
   field_office_link: true
   field_phone: true

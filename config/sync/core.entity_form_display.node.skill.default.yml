@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.skill.body
     - field.field.node.skill.field_image
+    - field.field.node.skill.field_metatags
     - field.field.node.skill.field_price
     - field.field.node.skill.field_price_info
     - field.field.node.skill.field_sessions
@@ -15,6 +16,7 @@ dependencies:
   module:
     - field_group
     - media_library
+    - metatag
     - paragraphs
     - path
     - text
@@ -55,6 +57,13 @@ content:
     settings:
       media_types: {  }
     third_party_settings: {  }
+    region: content
+  field_metatags:
+    weight: 26
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_price:
     weight: 6

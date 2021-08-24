@@ -1,0 +1,21 @@
+uuid: bda51b37-37e4-4162-aa74-af95e1119d1d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.seminar
+  module:
+    - metatag
+id: node.seminar.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: seminar
+label: Metatags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag
