@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.seminar.field_date_end
     - field.field.node.seminar.field_date_start
     - field.field.node.seminar.field_image
+    - field.field.node.seminar.field_metatags
     - field.field.node.seminar.field_place
     - field.field.node.seminar.field_place_link
     - field.field.node.seminar.field_price
@@ -19,6 +20,7 @@ dependencies:
     - field_group
     - link
     - media_library
+    - metatag
     - paragraphs
     - path
     - text
@@ -90,6 +92,13 @@ content:
       media_types: {  }
     third_party_settings: {  }
     type: media_library_widget
+    region: content
+  field_metatags:
+    weight: 26
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_place:
     weight: 8

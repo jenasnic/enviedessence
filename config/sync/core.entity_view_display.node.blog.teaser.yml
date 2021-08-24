@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.blog.field_content
     - field.field.node.blog.field_link
+    - field.field.node.blog.field_metatags
     - field.field.node.blog.field_publication_date
     - field.field.node.blog.field_thumbnail
     - node.type.blog
@@ -41,5 +42,6 @@ content:
     third_party_settings: {  }
 hidden:
   field_link: true
+  field_metatags: true
   field_publication_date: true
   langcode: true

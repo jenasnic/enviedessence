@@ -1,0 +1,33 @@
+uuid: 6b696d48-4941-4008-ab69-dbfb22e11a9a
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rpwvgyEURXLz_JjgMCrkS1rUv-0k3L79BpO-ReN7fDI
+id: node
+label: Content
+tags:
+  title: '[node:title] | [site:name]'
+  keywords: 'sophrologie,coaching,libération émotionnelle,accompagnement psychothérapeutique,soins énergétiques,bien-être'
+  geo_placename: AURAY
+  canonical_url: '[node:url]'
+  description: '[node:summary]'
+  geo_region: FR
+  image_src: '[node:field_image:entity:url]'
+  geo_position: '47.67971757071628; -2.9997845472641487'
+  og_longitude: '-2.9997845472641487'
+  og_street_address: '15 place Raoul Dautry'
+  og_title: '[node:title]'
+  og_image: '[node:field_image:entity:url]'
+  og_type: article
+  og_postal_code: '56400'
+  og_url: '[node:url]'
+  og_description: '[node:summary]'
+  og_latitude: '47.67971757071628'
+  og_country_name: France
+  profile_last_name: COPIN
+  og_site_name: Enviedessence
+  article_tag: 'sophrologie,coaching,libération émotionnelle,accompagnement psychothérapeutique,soins énergétiques,bien-être'
+  og_locality: AURAY
+  article_author: 'Cassandre COPIN'
+  profile_first_name: Cassandre

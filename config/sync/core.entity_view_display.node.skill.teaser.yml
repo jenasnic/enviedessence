@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.skill.body
     - field.field.node.skill.field_image
+    - field.field.node.skill.field_metatags
     - field.field.node.skill.field_price
     - field.field.node.skill.field_price_info
     - field.field.node.skill.field_sessions
@@ -44,6 +45,7 @@ content:
 hidden:
   body: true
   field_image: true
+  field_metatags: true
   field_price: true
   field_price_info: true
   field_sessions: true

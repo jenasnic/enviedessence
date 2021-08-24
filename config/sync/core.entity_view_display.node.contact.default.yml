@@ -7,12 +7,14 @@ dependencies:
     - field.field.node.contact.field_home_address
     - field.field.node.contact.field_home_link
     - field.field.node.contact.field_image
+    - field.field.node.contact.field_metatags
     - field.field.node.contact.field_office_address
     - field.field.node.contact.field_office_link
     - field.field.node.contact.field_phone
     - node.type.contact
   module:
     - link
+    - metatag
     - user
 id: node.contact.default
 targetEntityType: node
@@ -54,6 +56,13 @@ content:
       link: false
     third_party_settings: {  }
     type: entity_reference_entity_view
+    region: content
+  field_metatags:
+    weight: 7
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
     region: content
   field_office_address:
     weight: 4

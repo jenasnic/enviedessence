@@ -1,0 +1,32 @@
+uuid: 22bdd579-730d-4df7-bc0c-7029166bf5d2
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1noCXlegCr5HFehQRF1ViXy1jhU1jZ_sNN99a8Sj5jo
+id: front
+label: 'Front page'
+tags:
+  shortlink: '[site:url]'
+  title: Enviedessence
+  keywords: 'sophrologie,coaching,libération émotionnelle,accompagnement psychothérapeutique,soins énergétiques,bien-être'
+  geo_placename: AURAY
+  canonical_url: '[site:url]'
+  description: 'De l''exploration de soi à la reconnexion à soi. L’envie d’essence ou en vie d’essence, c’est l’idée de renouer avec ses aspirations, son être profond.'
+  geo_region: FR
+  geo_position: '47.67971757071628; -2.9997845472641487'
+  og_longitude: '-2.9997845472641487'
+  og_street_address: '15 place Raoul Dautry'
+  og_title: Enviedessence
+  og_type: article
+  og_postal_code: '56400'
+  og_url: '[site:url]'
+  og_description: 'De l''exploration de soi à la reconnexion à soi. L’envie d’essence ou en vie d’essence, c’est l’idée de renouer avec ses aspirations, son être profond.'
+  og_latitude: '47.67971757071628'
+  og_country_name: France
+  profile_last_name: COPIN
+  og_site_name: Enviedessence
+  article_tag: 'sophrologie,coaching,libération émotionnelle,accompagnement psychothérapeutique,soins énergétiques,bien-être'
+  og_locality: AURAY
+  article_author: 'Cassandre COPIN'
+  profile_first_name: Cassandre
